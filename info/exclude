@@ -9,7 +9,7 @@ description
 branches
 config
 hooks
-info
+info/*
 objects
 __pycache__
 refs
