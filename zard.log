@@ -1,0 +1,1620 @@
+20170223_20:45:23 -  Unexpected error: <class 'KeyboardInterrupt'>
+20170223_21:21:29 -  Unexpected error: <class 'KeyboardInterrupt'>
+20170225_13:01:06 -  Unexpected error: <class 'KeyboardInterrupt'>
+20170225_13:08:35 -  Unexpected error: <class 'KeyboardInterrupt'>
+20170225_14:14:35 -  Unexpected error: <class 'KeyboardInterrupt'>
+20170225_14:38:15 -  Unexpected error: <class 'KeyboardInterrupt'>
+20170303_19:30:58 - Call clopFileLog: Righe file di LOG: 6, dimensione max: 10000 righe
+20170303_19:33:36 - Call clopFileLog: Righe file di LOG: 7, dimensione max: 10000 righe
+20170303_19:34:50 - Call clopFileLog: Righe file di LOG: 8, dimensione max: 10000 righe
+20170303_19:34:50 - CRON presence
+20170303_19:38:02 - Call clopFileLog: Righe file di LOG: 10, dimensione max: 10000 righe
+20170303_19:38:02 - CRON presence
+20170303_19:39:13 - Call clopFileLog: Righe file di LOG: 12, dimensione max: 10000 righe
+20170303_19:39:13 - CRON presence
+20170303_19:42:54 - CRON presence
+20170303_19:43:44 - Call clopFileLog: Righe file di LOG: 15, dimensione max: 10000 righe
+20170303_19:43:44 - CRON presence
+20170303_19:47:25 - CRON presence
+20170303_19:49:10 - Call clopFileLog: Righe file di LOG: 18, dimensione max: 10000 righe
+20170303_19:49:20 - Call clopFileLog: Righe file di LOG: 19, dimensione max: 10000 righe
+20170303_19:49:20 - CRON presence
+20170303_19:50:17 - Call clopFileLog: Righe file di LOG: 21, dimensione max: 10000 righe
+20170303_19:50:17 - CRON presence
+20170303_19:50:21 - Call clopFileLog: Righe file di LOG: 23, dimensione max: 10000 righe
+20170303_19:50:21 - CRON presence
+20170303_19:54:38 - Call clopFileLog: Righe file di LOG: 25, dimensione max: 10000 righe
+20170303_19:54:38 - CRON presence
+20170303_19:55:21 - Call clopFileLog: Righe file di LOG: 27, dimensione max: 10000 righe
+20170303_19:55:21 - CRON presence
+20170303_19:57:01 - Call clopFileLog: Righe file di LOG: 29, dimensione max: 10000 righe
+20170303_19:57:01 - CRON presence
+20170303_19:57:11 - Call clopFileLog: Righe file di LOG: 31, dimensione max: 10000 righe
+20170303_19:57:11 - CRON presence
+20170303_19:57:17 - Call clopFileLog: Righe file di LOG: 33, dimensione max: 10000 righe
+20170303_19:57:17 - CRON presence
+20170303_19:57:56 - Call clopFileLog: Righe file di LOG: 35, dimensione max: 10000 righe
+20170303_19:57:56 - CRON presence
+20170303_19:58:02 - Call clopFileLog: Righe file di LOG: 37, dimensione max: 10000 righe
+20170303_19:58:02 - CRON presence
+20170303_19:58:29 - Call clopFileLog: Righe file di LOG: 39, dimensione max: 10000 righe
+20170303_19:58:29 - CRON presence
+20170305_17:48:36 - Call clopFileLog: Righe file di LOG: 41, dimensione max: 10000 righe
+20170305_17:48:36 - CRON presence
+20170305_17:48:59 - Call clopFileLog: Righe file di LOG: 43, dimensione max: 10000 righe
+20170305_17:48:59 - CRON presence
+20170305_17:50:08 - Call clopFileLog: Righe file di LOG: 45, dimensione max: 10000 righe
+20170305_17:50:08 - CRON presence
+20170305_17:53:50 - CRON presence
+20170305_17:57:31 - CRON presence
+20170305_18:01:13 - CRON presence
+20170305_18:04:54 - CRON presence
+20170305_18:08:36 - CRON presence
+20170305_18:12:17 - CRON presence
+20170305_18:15:58 - CRON presence
+20170305_18:19:40 - CRON presence
+20170305_18:20:23 - Call clopFileLog: Righe file di LOG: 55, dimensione max: 10000 righe
+20170305_18:20:23 - CRON presence
+20170305_18:21:21 - Call clopFileLog: Righe file di LOG: 57, dimensione max: 10000 righe
+20170305_18:21:21 - CRON presence
+20170305_18:22:29 - Call clopFileLog: Righe file di LOG: 59, dimensione max: 10000 righe
+20170305_18:22:29 - CRON presence
+20170306_20:48:22 - Call clopFileLog: Righe file di LOG: 61, dimensione max: 10000 righe
+20170306_20:48:22 - CRON presence
+20170306_20:52:03 - CRON presence
+20170306_20:55:44 - CRON presence
+20170306_20:59:24 - CRON presence
+20170306_21:03:05 - CRON presence
+20170306_21:06:46 - CRON presence
+20170306_21:10:26 - CRON presence
+20170306_21:12:59 - Call clopFileLog: Righe file di LOG: 69, dimensione max: 10000 righe
+20170306_21:12:59 - CRON presence
+20170306_21:16:40 - CRON presence
+20170306_21:20:20 - CRON presence
+20170308_20:44:37 - Call clopFileLog: Righe file di LOG: 73, dimensione max: 10000 righe
+20170308_20:44:37 - CRON presence
+20170308_22:02:54 - Call clopFileLog: Righe file di LOG: 75, dimensione max: 10000 righe
+20170308_22:02:54 - CRON presence
+20170308_22:05:41 - Call clopFileLog: Righe file di LOG: 77, dimensione max: 10000 righe
+20170308_22:05:41 - CRON presence
+20170308_22:09:23 - CRON presence
+20170308_22:10:58 - Call clopFileLog: Righe file di LOG: 80, dimensione max: 10000 righe
+20170308_22:10:58 - CRON presence
+20170308_22:12:20 - Call clopFileLog: Righe file di LOG: 82, dimensione max: 10000 righe
+20170308_22:12:20 - CRON presence
+20170309_19:48:24 - Call clopFileLog: Righe file di LOG: 84, dimensione max: 10000 righe
+20170309_19:48:24 - CRON presence
+20170309_19:52:07 - CRON presence
+20170309_19:55:49 - CRON presence
+20170309_19:59:30 - CRON presence
+20170309_20:03:11 - CRON presence
+20170309_20:06:53 - CRON presence
+20170309_20:10:34 - CRON presence
+20170309_20:14:16 - CRON presence
+20170309_20:17:57 - CRON presence
+20170309_20:21:39 - CRON presence
+20170309_20:25:20 - CRON presence
+20170309_20:29:02 - CRON presence
+20170309_20:32:43 - CRON presence
+20170309_20:36:25 - CRON presence
+20170309_20:40:06 - CRON presence
+20170309_20:43:48 - CRON presence
+20170309_20:47:29 - CRON presence
+20170309_20:51:10 - CRON presence
+20170309_20:54:52 - CRON presence
+20170309_20:58:34 - CRON presence
+20170309_21:02:15 - CRON presence
+20170309_21:05:56 - CRON presence
+20170309_21:09:38 - CRON presence
+20170309_21:13:20 - CRON presence
+20170309_21:17:01 - CRON presence
+20170309_21:20:42 - CRON presence
+20170309_21:24:24 - CRON presence
+20170309_21:28:05 - CRON presence
+20170309_21:31:47 - CRON presence
+20170309_21:35:28 - CRON presence
+20170309_21:39:10 - CRON presence
+20170309_21:42:51 - CRON presence
+20170309_21:46:33 - CRON presence
+20170309_21:50:14 - CRON presence
+20170309_21:53:55 - CRON presence
+20170309_21:57:37 - CRON presence
+20170309_22:01:18 - CRON presence
+20170309_22:05:00 - CRON presence
+20170309_22:08:41 - CRON presence
+20170309_22:12:22 - CRON presence
+20170309_22:16:04 - CRON presence
+20170309_22:19:45 - CRON presence
+20170309_22:23:27 - CRON presence
+20170309_22:27:08 - CRON presence
+20170309_22:30:50 - CRON presence
+20170311_12:17:55 - Call clopFileLog: Righe file di LOG: 130, dimensione max: 10000 righe
+20170311_12:17:55 - CRON presence
+20170311_12:21:37 - CRON presence
+20170311_12:25:19 - CRON presence
+20170311_12:25:57 - Call clopFileLog: Righe file di LOG: 134, dimensione max: 10000 righe
+20170311_12:25:57 - CRON presence
+20170311_12:29:39 - CRON presence
+20170311_12:33:13 - Call clopFileLog: Righe file di LOG: 137, dimensione max: 10000 righe
+20170311_12:33:13 - CRON presence
+20170311_12:36:54 - CRON presence
+20170311_12:39:36 - Call clopFileLog: Righe file di LOG: 140, dimensione max: 10000 righe
+20170311_12:39:36 - CRON presence
+20170311_12:40:34 - Unexpected error: <class 'KeyboardInterrupt'>
+20170311_12:40:35 - Call clopFileLog: Righe file di LOG: 143, dimensione max: 10000 righe
+20170311_12:40:35 - CRON presence
+20170311_12:41:47 - --------------------------
+20170311_12:41:47 - ['/home/pi/domocontrol/loop.py', 'ON']
+20170311_12:42:05 - --------------------------
+20170311_12:42:05 - ['/home/pi/domocontrol/loop.py', 'ON']
+20170311_12:44:17 - CRON presence
+20170311_12:47:58 - CRON presence
+20170311_12:51:40 - CRON presence
+20170311_12:55:21 - CRON presence
+20170311_12:59:02 - CRON presence
+20170311_13:02:44 - CRON presence
+20170311_13:06:25 - CRON presence
+20170311_13:10:07 - CRON presence
+20170311_13:13:49 - CRON presence
+20170311_13:17:31 - CRON presence
+20170311_13:21:14 - CRON presence
+20170311_13:24:56 - CRON presence
+20170311_13:28:39 - CRON presence
+20170311_13:32:21 - CRON presence
+20170311_13:36:03 - CRON presence
+20170311_13:39:45 - CRON presence
+20170311_13:43:26 - CRON presence
+20170311_13:47:07 - CRON presence
+20170311_13:49:04 - --------------------------
+20170311_13:49:04 - ['/home/pi/domocontrol/loop.py', 'ON']
+20170311_13:49:30 - --------------------------
+20170311_13:49:30 - ['/home/pi/domocontrol/loop.py', 'ON']
+20170311_13:50:50 - CRON presence
+20170311_13:54:31 - CRON presence
+20170311_13:58:13 - CRON presence
+20170311_14:01:54 - CRON presence
+20170311_14:05:36 - CRON presence
+20170311_14:09:17 - CRON presence
+20170311_14:12:59 - CRON presence
+20170311_14:16:40 - CRON presence
+20170311_14:20:22 - CRON presence
+20170311_14:24:03 - CRON presence
+20170311_14:27:45 - CRON presence
+20170311_14:30:23 - --------------------------
+20170311_14:31:08 - --------------------------
+20170311_14:31:20 - Unexpected error: <class 'KeyboardInterrupt'>
+20170311_14:33:31 - --------------------------
+20170311_14:33:43 - Unexpected error: <class 'KeyboardInterrupt'>
+20170311_14:33:44 - Call clopFileLog: Righe file di LOG: 187, dimensione max: 10000 righe
+20170311_14:33:44 - CRON presence
+20170311_14:35:19 - Unexpected error: <class 'KeyboardInterrupt'>
+20170311_14:35:21 - Call clopFileLog: Righe file di LOG: 190, dimensione max: 10000 righe
+20170311_14:35:21 - CRON presence
+20170311_14:36:02 - Unexpected error: <class 'KeyboardInterrupt'>
+20170311_14:36:04 - Call clopFileLog: Righe file di LOG: 193, dimensione max: 10000 righe
+20170311_14:36:04 - CRON presence
+20170311_14:36:21 - Call clopFileLog: Righe file di LOG: 195, dimensione max: 10000 righe
+20170311_14:36:21 - CRON presence
+20170311_14:36:23 - Unexpected error: <class 'KeyboardInterrupt'>
+20170311_14:36:42 - --------------------------
+20170311_14:39:32 - --------------------------
+20170311_14:39:36 - --------------------------
+20170312_09:45:16 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_09:45:40 - Call clopFileLog: Righe file di LOG: 202, dimensione max: 10000 righe
+20170312_09:45:40 - CRON presence
+20170312_09:45:53 - Unexpected error: <class 'TypeError'>
+20170312_09:45:53 - Unexpected error: <class 'TypeError'>
+20170312_09:49:21 - CRON presence
+20170312_09:49:47 - Call clopFileLog: Righe file di LOG: 207, dimensione max: 10000 righe
+20170312_09:49:47 - CRON presence
+20170312_09:51:11 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_09:51:13 - Call clopFileLog: Righe file di LOG: 210, dimensione max: 10000 righe
+20170312_09:51:13 - CRON presence
+20170312_09:51:33 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_09:51:40 - Call clopFileLog: Righe file di LOG: 213, dimensione max: 10000 righe
+20170312_09:51:40 - CRON presence
+20170312_09:52:42 - Unexpected error: <class 'TypeError'>
+20170312_09:52:42 - Unexpected error: <class 'TypeError'>
+20170312_09:53:59 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_09:54:33 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_09:55:26 - jdsaklòlkasdjklòlaskdj
+20170312_09:55:26 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_09:59:22 - jdsaklòlkasdjklòlaskdj
+20170312_09:59:22 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_09:59:43 - jdsaklòlkasdjklòlaskdj
+20170312_09:59:43 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:00:35 - jdsaklòlkasdjklòlaskdj
+20170312_10:00:35 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:00:39 - jdsaklòlkasdjklòlaskdj
+20170312_10:00:39 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:05:39 - *****
+20170312_10:05:57 - *****
+20170312_10:05:57 - jdsaklòlkasdjklòlaskdj
+20170312_10:05:57 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:06:15 - *****
+20170312_10:06:15 - jdsaklòlkasdjklòlaskdj
+20170312_10:06:15 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:06:51 - *****
+20170312_10:06:51 - jdsaklòlkasdjklòlaskdj
+20170312_10:06:51 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:07:00 - *****
+20170312_10:07:12 - *****
+20170312_10:07:12 - jdsaklòlkasdjklòlaskdj
+20170312_10:07:12 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:07:31 - *****
+20170312_10:07:46 - *****
+20170312_10:07:46 - jdsaklòlkasdjklòlaskdj
+20170312_10:07:46 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:07:54 - *****
+20170312_10:07:54 - 
+20170312_10:07:54 - jdsaklòlkasdjklòlaskdj
+20170312_10:07:54 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:08:00 - *****
+20170312_10:08:00 - 
+20170312_10:08:00 - jdsaklòlkasdjklòlaskdj
+20170312_10:08:00 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:08:35 - *****
+20170312_10:08:35 - jdsaklòlkasdjklòlaskdj
+20170312_10:28:32 - ---------
+20170312_10:28:32 - jdsaklòlkasdjklòlaskdj
+20170312_10:31:04 - ---------
+20170312_10:31:56 - ---------
+20170312_10:31:56 - jdsaklòlkasdjklòlaskdj
+20170312_10:54:21 - ---------
+20170312_10:54:21 - jdsaklòlkasdjklòlaskdj
+20170312_10:54:57 - ---------
+20170312_10:54:57 - jdsaklòlkasdjklòlaskdj
+20170312_10:56:42 - *****
+20170312_10:56:42 - jdsaklòlkasdjklòlaskdj
+20170312_10:57:26 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:57:29 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_10:58:06 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:58:06 - Return None
+20170312_10:58:08 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_10:58:08 - Return None
+20170312_10:59:30 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:59:34 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_10:59:47 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:59:50 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_10:59:56 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_10:59:58 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:01:50 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:01:50 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:01:50 - tx485 END
+20170312_11:02:35 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:02:35 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:02:35 - tx485 END
+20170312_11:02:38 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:02:38 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:02:38 - tx485 END
+20170312_11:02:42 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:02:42 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:02:42 - tx485 END
+20170312_11:02:44 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:02:44 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:02:44 - tx485 END
+20170312_11:03:00 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:03:00 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:03:00 - tx485 END
+20170312_11:03:01 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:03:01 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:03:01 - tx485 END
+20170312_11:03:02 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:03:02 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:03:02 - tx485 END
+20170312_11:03:05 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:03:05 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:03:05 - tx485 END
+20170312_11:03:23 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:03:23 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:03:23 - tx485 END
+20170312_11:03:24 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:03:24 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:03:24 - tx485 END
+20170312_11:07:53 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:07:53 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:07:53 - tx485 END
+20170312_11:07:55 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:07:55 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:07:55 - tx485 END
+20170312_11:08:41 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:08:41 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:08:41 - tx485 END
+20170312_11:08:44 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:08:44 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:08:44 - tx485 END
+20170312_11:08:45 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:08:45 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:08:45 - tx485 END
+20170312_11:08:47 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:08:47 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:08:47 - tx485 END
+20170312_11:08:48 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:08:48 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:08:48 - tx485 END
+20170312_11:08:50 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:08:50 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:08:50 - tx485 END
+20170312_11:09:56 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:09:56 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:09:56 - tx485 END
+20170312_11:09:58 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:09:58 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:09:58 - tx485 END
+20170312_11:10:11 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:10:11 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:10:11 - tx485 END
+20170312_11:10:15 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:10:15 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:10:15 - tx485 END
+20170312_11:19:06 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:19:06 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:19:06 - tx485 END
+20170312_11:19:21 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:19:21 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:19:21 - tx485 END
+20170312_11:19:26 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:19:26 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:19:26 - tx485 END
+20170312_11:20:29 - Call clopFileLog: Righe file di LOG: 358, dimensione max: 10000 righe
+20170312_11:20:29 - CRON presence
+20170312_11:20:29 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:20:29 - tx485 END
+20170312_11:20:38 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:20:38 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:20:38 - tx485 END
+20170312_11:20:38 - Unexpected error: <class 'TypeError'>
+20170312_11:20:38 - Unexpected error: <class 'TypeError'>
+20170312_11:22:57 - Call clopFileLog: Righe file di LOG: 367, dimensione max: 10000 righe
+20170312_11:22:57 - CRON presence
+20170312_11:22:57 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:22:57 - tx485 END
+20170312_11:23:01 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:23:01 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:23:01 - tx485 END
+20170312_11:23:01 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x764dc410>> 33 
+20170312_11:23:05 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:23:05 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:23:05 - tx485 END
+20170312_11:23:05 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x764dc410>> 33 
+20170312_11:24:06 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:24:08 - Call clopFileLog: Righe file di LOG: 380, dimensione max: 10000 righe
+20170312_11:24:08 - CRON presence
+20170312_11:24:08 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:24:08 - tx485 END
+20170312_11:24:13 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:24:13 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:24:13 - tx485 END
+20170312_11:24:13 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x764ef430>> 33 
+20170312_11:25:58 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:25:58 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:25:58 - tx485 END
+20170312_11:25:58 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x764ef430>> 33 
+20170312_11:26:00 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:26:00 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:26:00 - tx485 END
+20170312_11:26:00 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x764ef430>> 33 
+20170312_11:27:49 - CRON presence
+20170312_11:28:13 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:28:13 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:28:13 - tx485 END
+20170312_11:28:13 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x764ef430>> 33 
+20170312_11:28:30 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:28:32 - Call clopFileLog: Righe file di LOG: 402, dimensione max: 10000 righe
+20170312_11:28:32 - CRON presence
+20170312_11:28:32 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:28:32 - tx485 END
+20170312_11:28:54 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:28:54 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:28:54 - tx485 END
+20170312_11:28:54 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x765a2410>> 33 
+20170312_11:29:49 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:29:50 - Call clopFileLog: Righe file di LOG: 411, dimensione max: 10000 righe
+20170312_11:29:50 - CRON presence
+20170312_11:29:50 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:29:50 - tx485 END
+20170312_11:29:53 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:29:53 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:29:53 - tx485 END
+20170312_11:29:53 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x764f9430>> 33 
+20170312_11:30:42 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:30:43 - Call clopFileLog: Righe file di LOG: 420, dimensione max: 10000 righe
+20170312_11:30:43 - CRON presence
+20170312_11:30:43 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:30:43 - tx485 END
+20170312_11:30:48 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:30:48 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:30:48 - tx485 END
+20170312_11:30:48 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76558490>> 33 
+20170312_11:30:53 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:30:53 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:30:53 - tx485 END
+20170312_11:30:53 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76558490>> 33 
+20170312_11:31:06 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:31:06 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:31:06 - tx485 END
+20170312_11:31:06 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76558490>> 33 
+20170312_11:32:43 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:32:44 - Call clopFileLog: Righe file di LOG: 437, dimensione max: 10000 righe
+20170312_11:32:44 - CRON presence
+20170312_11:32:44 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:32:44 - tx485 END
+20170312_11:32:49 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:32:49 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:32:49 - tx485 END
+20170312_11:32:49 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76586490>> 33 
+20170312_11:32:51 - ERROR update Domoticz Did:46 value:0
+20170312_11:32:51 - ERROR update Domoticz Did:47 value:0
+20170312_11:32:51 - ERROR update Domoticz Did:65 value:0
+20170312_11:32:51 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:32:51 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:32:51 - tx485 END
+20170312_11:32:51 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76586490>> 33 
+20170312_11:32:53 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:32:53 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:32:53 - tx485 END
+20170312_11:32:53 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76586490>> 33 
+20170312_11:32:55 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:32:55 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:32:55 - tx485 END
+20170312_11:32:55 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76586490>> 33 
+20170312_11:33:01 - ERROR update Domoticz Did:46 value:0
+20170312_11:33:01 - ERROR update Domoticz Did:47 value:0
+20170312_11:33:01 - ERROR update Domoticz Did:65 value:0
+20170312_11:33:11 - ERROR update Domoticz Did:46 value:0
+20170312_11:33:11 - ERROR update Domoticz Did:47 value:0
+20170312_11:33:11 - ERROR update Domoticz Did:65 value:0
+20170312_11:33:21 - ERROR update Domoticz Did:46 value:0
+20170312_11:33:21 - ERROR update Domoticz Did:47 value:0
+20170312_11:33:21 - ERROR update Domoticz Did:65 value:0
+20170312_11:33:31 - ERROR update Domoticz Did:46 value:0
+20170312_11:33:31 - ERROR update Domoticz Did:47 value:0
+20170312_11:33:31 - ERROR update Domoticz Did:65 value:0
+20170312_11:33:38 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:33:40 - Call clopFileLog: Righe file di LOG: 473, dimensione max: 10000 righe
+20170312_11:33:40 - CRON presence
+20170312_11:33:40 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:33:40 - tx485 END
+20170312_11:33:41 - ERROR update Domoticz Did:46 value:0
+20170312_11:33:41 - ERROR update Domoticz Did:47 value:0
+20170312_11:33:41 - ERROR update Domoticz Did:65 value:0
+20170312_11:33:44 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:33:44 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:33:44 - tx485 END
+20170312_11:33:44 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76592490>> 33 
+20170312_11:33:47 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:33:47 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:33:47 - tx485 END
+20170312_11:33:47 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76592490>> 33 
+20170312_11:33:51 - ERROR update Domoticz Did:46 value:0
+20170312_11:33:51 - ERROR update Domoticz Did:47 value:0
+20170312_11:33:51 - ERROR update Domoticz Did:63 value:0
+20170312_11:33:51 - ERROR update Domoticz Did:65 value:0
+20170312_11:34:01 - ERROR update Domoticz Did:46 value:0
+20170312_11:34:01 - ERROR update Domoticz Did:47 value:0
+20170312_11:34:01 - ERROR update Domoticz Did:65 value:0
+20170312_11:34:02 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:34:02 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:34:02 - tx485 END
+20170312_11:34:02 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76592490>> 33 
+20170312_11:34:05 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:34:06 - Call clopFileLog: Righe file di LOG: 500, dimensione max: 10000 righe
+20170312_11:34:06 - CRON presence
+20170312_11:34:06 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:34:06 - tx485 END
+20170312_11:34:09 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:34:09 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:34:09 - tx485 END
+20170312_11:34:09 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x7651a490>> 33 
+20170312_11:34:11 - ERROR update Domoticz Did:46 value:0
+20170312_11:34:11 - ERROR update Domoticz Did:47 value:0
+20170312_11:34:11 - ERROR update Domoticz Did:65 value:0
+20170312_11:34:21 - ERROR update Domoticz Did:46 value:0
+20170312_11:34:21 - ERROR update Domoticz Did:47 value:0
+20170312_11:34:21 - ERROR update Domoticz Did:65 value:0
+20170312_11:34:31 - ERROR update Domoticz Did:46 value:0
+20170312_11:34:31 - ERROR update Domoticz Did:47 value:0
+20170312_11:34:31 - ERROR update Domoticz Did:65 value:0
+20170312_11:34:41 - ERROR update Domoticz Did:46 value:0
+20170312_11:34:41 - ERROR update Domoticz Did:47 value:0
+20170312_11:34:41 - ERROR update Domoticz Did:65 value:0
+20170312_11:34:51 - ERROR update Domoticz Did:46 value:0
+20170312_11:34:51 - ERROR update Domoticz Did:47 value:0
+20170312_11:34:51 - ERROR update Domoticz Did:65 value:0
+20170312_11:35:01 - ERROR update Domoticz Did:46 value:0
+20170312_11:35:02 - ERROR update Domoticz Did:47 value:0
+20170312_11:35:02 - ERROR update Domoticz Did:63 value:0
+20170312_11:35:02 - ERROR update Domoticz Did:65 value:0
+20170312_11:35:09 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:35:09 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:35:09 - tx485 END
+20170312_11:35:09 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x7651a490>> 33 
+20170312_11:35:11 - ERROR update Domoticz Did:46 value:0
+20170312_11:35:11 - ERROR update Domoticz Did:47 value:0
+20170312_11:35:11 - ERROR update Domoticz Did:65 value:0
+20170312_11:35:16 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:35:17 - Call clopFileLog: Righe file di LOG: 535, dimensione max: 10000 righe
+20170312_11:35:17 - CRON presence
+20170312_11:35:18 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:35:18 - tx485 END
+20170312_11:35:21 - ERROR update Domoticz Did:46 value:0
+20170312_11:35:21 - ERROR update Domoticz Did:47 value:0
+20170312_11:35:21 - ERROR update Domoticz Did:65 value:0
+20170312_11:35:22 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:35:22 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:35:22 - tx485 END
+20170312_11:35:22 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76591470>> 33 
+20170312_11:35:27 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:35:27 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:35:27 - tx485 END
+20170312_11:35:27 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76591470>> 33 
+20170312_11:35:30 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:35:30 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:35:30 - tx485 END
+20170312_11:35:30 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76591470>> 33 
+20170312_11:35:31 - ERROR update Domoticz Did:46 value:0
+20170312_11:35:31 - ERROR update Domoticz Did:47 value:0
+20170312_11:35:31 - ERROR update Domoticz Did:65 value:0
+20170312_11:35:41 - ERROR update Domoticz Did:46 value:0
+20170312_11:35:41 - ERROR update Domoticz Did:47 value:0
+20170312_11:35:41 - ERROR update Domoticz Did:65 value:0
+20170312_11:35:51 - ERROR update Domoticz Did:46 value:0
+20170312_11:35:51 - ERROR update Domoticz Did:47 value:0
+20170312_11:35:51 - ERROR update Domoticz Did:65 value:0
+20170312_11:36:01 - ERROR update Domoticz Did:46 value:0
+20170312_11:36:01 - ERROR update Domoticz Did:47 value:0
+20170312_11:36:01 - ERROR update Domoticz Did:65 value:0
+20170312_11:36:11 - ERROR update Domoticz Did:46 value:0
+20170312_11:36:11 - ERROR update Domoticz Did:47 value:0
+20170312_11:36:11 - ERROR update Domoticz Did:63 value:0
+20170312_11:36:11 - ERROR update Domoticz Did:65 value:0
+20170312_11:36:18 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:36:18 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:36:18 - tx485 END
+20170312_11:36:18 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76591470>> 33 
+20170312_11:36:21 - ERROR update Domoticz Did:46 value:0
+20170312_11:36:21 - ERROR update Domoticz Did:47 value:0
+20170312_11:36:21 - ERROR update Domoticz Did:65 value:0
+20170312_11:36:31 - ERROR update Domoticz Did:46 value:0
+20170312_11:36:31 - ERROR update Domoticz Did:47 value:0
+20170312_11:36:32 - ERROR update Domoticz Did:65 value:0
+20170312_11:36:36 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:36:37 - Call clopFileLog: Righe file di LOG: 581, dimensione max: 10000 righe
+20170312_11:36:37 - CRON presence
+20170312_11:36:37 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:36:37 - tx485 END
+20170312_11:36:41 - ERROR update Domoticz Did:46 value:0
+20170312_11:36:41 - ERROR update Domoticz Did:47 value:0
+20170312_11:36:41 - ERROR update Domoticz Did:65 value:0
+20170312_11:36:44 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:36:44 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:36:44 - tx485 END
+20170312_11:36:44 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:36:51 - ERROR update Domoticz Did:46 value:0
+20170312_11:36:51 - ERROR update Domoticz Did:47 value:0
+20170312_11:36:51 - ERROR update Domoticz Did:65 value:0
+20170312_11:37:01 - ERROR update Domoticz Did:46 value:0
+20170312_11:37:01 - ERROR update Domoticz Did:47 value:0
+20170312_11:37:01 - ERROR update Domoticz Did:65 value:0
+20170312_11:37:11 - ERROR update Domoticz Did:47 value:0
+20170312_11:37:11 - ERROR update Domoticz Did:65 value:0
+20170312_11:37:12 - Call clopFileLog: Righe file di LOG: 600, dimensione max: 10000 righe
+20170312_11:37:12 - CRON presence
+20170312_11:37:12 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:12 - tx485 END
+20170312_11:37:13 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:13 - tx485 END
+20170312_11:37:14 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:14 - tx485 END
+20170312_11:37:15 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:15 - tx485 END
+20170312_11:37:16 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:16 - tx485 END
+20170312_11:37:18 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:18 - tx485 END
+20170312_11:37:18 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:37:18 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:37:18 - tx485 END
+20170312_11:37:18 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:37:19 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:19 - tx485 END
+20170312_11:37:20 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:20 - tx485 END
+20170312_11:37:21 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:21 - tx485 END
+20170312_11:37:22 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:22 - tx485 END
+20170312_11:37:23 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:23 - tx485 END
+20170312_11:37:24 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:24 - tx485 END
+20170312_11:37:25 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:25 - tx485 END
+20170312_11:37:26 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:26 - tx485 END
+20170312_11:37:27 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:27 - tx485 END
+20170312_11:37:28 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:28 - tx485 END
+20170312_11:37:29 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:29 - tx485 END
+20170312_11:37:31 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:31 - tx485 END
+20170312_11:37:31 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:37:31 - tx485 END
+20170312_11:37:41 - ERROR update Domoticz Did:46 value:0
+20170312_11:37:41 - ERROR update Domoticz Did:47 value:0
+20170312_11:37:41 - ERROR update Domoticz Did:65 value:0
+20170312_11:37:51 - ERROR update Domoticz Did:46 value:0
+20170312_11:37:51 - ERROR update Domoticz Did:47 value:0
+20170312_11:37:51 - ERROR update Domoticz Did:65 value:0
+20170312_11:38:01 - ERROR update Domoticz Did:46 value:0
+20170312_11:38:01 - ERROR update Domoticz Did:47 value:0
+20170312_11:38:01 - ERROR update Domoticz Did:65 value:0
+20170312_11:38:08 - Call clopFileLog: Righe file di LOG: 653, dimensione max: 10000 righe
+20170312_11:38:08 - CRON presence
+20170312_11:38:08 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:08 - tx485 END
+20170312_11:38:10 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:10 - tx485 END
+20170312_11:38:11 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:11 - tx485 END
+20170312_11:38:11 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:38:13 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:38:13 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:38:13 - tx485 END
+20170312_11:38:13 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:38:16 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:38:16 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:38:16 - tx485 END
+20170312_11:38:16 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:38:21 - ERROR update Domoticz Did:46 value:0
+20170312_11:38:21 - ERROR update Domoticz Did:47 value:0
+20170312_11:38:21 - ERROR update Domoticz Did:65 value:0
+20170312_11:38:30 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:38:30 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:38:30 - tx485 END
+20170312_11:38:30 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:38:31 - ERROR update Domoticz Did:46 value:0
+20170312_11:38:34 - ERROR update Domoticz Did:47 value:0
+20170312_11:38:34 - ERROR update Domoticz Did:63 value:0
+20170312_11:38:34 - ERROR update Domoticz Did:65 value:0
+20170312_11:38:41 - ERROR update Domoticz Did:46 value:0
+20170312_11:38:41 - ERROR update Domoticz Did:47 value:0
+20170312_11:38:41 - ERROR update Domoticz Did:65 value:0
+20170312_11:38:43 - Call clopFileLog: Righe file di LOG: 684, dimensione max: 10000 righe
+20170312_11:38:43 - CRON presence
+20170312_11:38:43 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:43 - tx485 END
+20170312_11:38:44 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:44 - tx485 END
+20170312_11:38:45 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:45 - tx485 END
+20170312_11:38:46 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:46 - tx485 END
+20170312_11:38:47 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:38:47 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:38:47 - tx485 END
+20170312_11:38:47 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:38:48 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:48 - tx485 END
+20170312_11:38:49 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:49 - tx485 END
+20170312_11:38:50 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:38:50 - tx485 END
+20170312_11:38:50 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:38:50 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:38:50 - tx485 END
+20170312_11:38:51 - ERROR update Domoticz Did:46 value:0
+20170312_11:38:51 - ERROR update Domoticz Did:47 value:0
+20170312_11:38:51 - ERROR update Domoticz Did:65 value:0
+20170312_11:38:52 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:38:52 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:38:52 - tx485 END
+20170312_11:38:52 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:39:01 - ERROR update Domoticz Did:46 value:0
+20170312_11:39:01 - ERROR update Domoticz Did:47 value:0
+20170312_11:39:01 - ERROR update Domoticz Did:65 value:0
+20170312_11:39:11 - ERROR update Domoticz Did:46 value:0
+20170312_11:39:11 - ERROR update Domoticz Did:47 value:0
+20170312_11:39:11 - ERROR update Domoticz Did:65 value:0
+20170312_11:39:21 - ERROR update Domoticz Did:46 value:0
+20170312_11:39:21 - ERROR update Domoticz Did:47 value:0
+20170312_11:39:21 - ERROR update Domoticz Did:65 value:0
+20170312_11:39:31 - ERROR update Domoticz Did:46 value:0
+20170312_11:39:31 - ERROR update Domoticz Did:47 value:0
+20170312_11:39:31 - ERROR update Domoticz Did:65 value:0
+20170312_11:39:38 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:39:38 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:39:38 - tx485 END
+20170312_11:39:38 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:39:41 - ERROR update Domoticz Did:46 value:0
+20170312_11:39:41 - ERROR update Domoticz Did:47 value:0
+20170312_11:39:41 - ERROR update Domoticz Did:63 value:0
+20170312_11:39:41 - ERROR update Domoticz Did:65 value:0
+20170312_11:39:51 - ERROR update Domoticz Did:46 value:0
+20170312_11:39:51 - ERROR update Domoticz Did:47 value:0
+20170312_11:39:51 - ERROR update Domoticz Did:65 value:0
+20170312_11:40:01 - ERROR update Domoticz Did:46 value:0
+20170312_11:40:01 - ERROR update Domoticz Did:47 value:0
+20170312_11:40:01 - ERROR update Domoticz Did:65 value:0
+20170312_11:40:11 - ERROR update Domoticz Did:46 value:0
+20170312_11:40:11 - ERROR update Domoticz Did:47 value:0
+20170312_11:40:11 - ERROR update Domoticz Did:65 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:51 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:52 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:53 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:54 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:55 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:56 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:46 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:47 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:63 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:65 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:46 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:47 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:63 value:0
+20170312_11:40:23 - ERROR update Domoticz Did:65 value:0
+20170312_11:40:24 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:40:24 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:40:24 - tx485 END
+20170312_11:40:24 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:40:25 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:40:25 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:40:25 - tx485 END
+20170312_11:40:25 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:40:33 - ERROR update Domoticz Did:46 value:0
+20170312_11:40:33 - ERROR update Domoticz Did:47 value:0
+20170312_11:40:33 - ERROR update Domoticz Did:65 value:0
+20170312_11:40:43 - Call clopFileLog: Righe file di LOG: 768, dimensione max: 10000 righe
+20170312_11:40:43 - CRON presence
+20170312_11:40:43 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:40:43 - tx485 END
+20170312_11:40:43 - ERROR update Domoticz Did:46 value:0
+20170312_11:40:44 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:40:44 - tx485 END
+20170312_11:40:45 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:40:46 - tx485 END
+20170312_11:40:47 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:40:47 - tx485 END
+20170312_11:40:48 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:40:48 - tx485 END
+20170312_11:40:49 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:40:49 - tx485 END
+20170312_11:40:50 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:40:50 - tx485 END
+20170312_11:40:51 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:40:51 - tx485 END
+20170312_11:40:53 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:40:53 - tx485 END
+20170312_11:40:53 - ERROR update Domoticz Did:46 value:0
+20170312_11:40:53 - ERROR update Domoticz Did:47 value:0
+20170312_11:40:53 - ERROR update Domoticz Did:65 value:0
+20170312_11:41:03 - ERROR update Domoticz Did:46 value:0
+20170312_11:41:03 - ERROR update Domoticz Did:47 value:0
+20170312_11:41:03 - ERROR update Domoticz Did:65 value:0
+20170312_11:41:13 - ERROR update Domoticz Did:46 value:0
+20170312_11:41:13 - ERROR update Domoticz Did:47 value:0
+20170312_11:41:13 - ERROR update Domoticz Did:65 value:0
+20170312_11:41:23 - ERROR update Domoticz Did:46 value:0
+20170312_11:41:23 - ERROR update Domoticz Did:47 value:0
+20170312_11:41:23 - ERROR update Domoticz Did:65 value:0
+20170312_11:41:30 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:41:30 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:41:30 - tx485 END
+20170312_11:41:30 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:41:33 - ERROR update Domoticz Did:46 value:0
+20170312_11:41:33 - ERROR update Domoticz Did:47 value:0
+20170312_11:41:33 - ERROR update Domoticz Did:63 value:0
+20170312_11:41:33 - ERROR update Domoticz Did:65 value:0
+20170312_11:41:43 - ERROR update Domoticz Did:46 value:0
+20170312_11:41:43 - ERROR update Domoticz Did:47 value:0
+20170312_11:41:43 - ERROR update Domoticz Did:65 value:0
+20170312_11:41:53 - ERROR update Domoticz Did:46 value:0
+20170312_11:41:53 - ERROR update Domoticz Did:47 value:0
+20170312_11:41:53 - ERROR update Domoticz Did:65 value:0
+20170312_11:42:03 - ERROR update Domoticz Did:46 value:0
+20170312_11:42:03 - ERROR update Domoticz Did:47 value:0
+20170312_11:42:03 - ERROR update Domoticz Did:65 value:0
+20170312_11:42:13 - ERROR update Domoticz Did:46 value:0
+20170312_11:42:13 - ERROR update Domoticz Did:47 value:0
+20170312_11:42:13 - ERROR update Domoticz Did:65 value:0
+20170312_11:42:23 - ERROR update Domoticz Did:46 value:0
+20170312_11:42:23 - ERROR update Domoticz Did:47 value:0
+20170312_11:42:23 - ERROR update Domoticz Did:65 value:0
+20170312_11:42:33 - ERROR update Domoticz Did:46 value:0
+20170312_11:42:33 - ERROR update Domoticz Did:47 value:0
+20170312_11:42:33 - ERROR update Domoticz Did:65 value:0
+20170312_11:42:37 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:42:37 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:42:37 - tx485 END
+20170312_11:42:37 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:42:43 - ERROR update Domoticz Did:46 value:0
+20170312_11:42:43 - ERROR update Domoticz Did:47 value:0
+20170312_11:42:43 - ERROR update Domoticz Did:63 value:0
+20170312_11:42:43 - ERROR update Domoticz Did:65 value:0
+20170312_11:42:53 - ERROR update Domoticz Did:46 value:0
+20170312_11:42:53 - ERROR update Domoticz Did:47 value:0
+20170312_11:42:53 - ERROR update Domoticz Did:65 value:0
+20170312_11:43:03 - ERROR update Domoticz Did:46 value:0
+20170312_11:43:03 - ERROR update Domoticz Did:47 value:0
+20170312_11:43:03 - ERROR update Domoticz Did:65 value:0
+20170312_11:43:13 - ERROR update Domoticz Did:46 value:0
+20170312_11:43:13 - ERROR update Domoticz Did:47 value:0
+20170312_11:43:13 - ERROR update Domoticz Did:65 value:0
+20170312_11:43:23 - ERROR update Domoticz Did:46 value:0
+20170312_11:43:23 - ERROR update Domoticz Did:47 value:0
+20170312_11:43:23 - ERROR update Domoticz Did:65 value:0
+20170312_11:43:33 - ERROR update Domoticz Did:46 value:0
+20170312_11:43:33 - ERROR update Domoticz Did:47 value:0
+20170312_11:43:33 - ERROR update Domoticz Did:65 value:0
+20170312_11:43:43 - ERROR update Domoticz Did:46 value:0
+20170312_11:43:43 - ERROR update Domoticz Did:47 value:0
+20170312_11:43:43 - ERROR update Domoticz Did:65 value:0
+20170312_11:43:44 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_11:43:44 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_11:43:44 - tx485 END
+20170312_11:43:44 - Error 14: <bound method Domoticz.getStatusDeviceDomoticz of <__main__.Domoticz object at 0x76507470>> 33 
+20170312_11:43:53 - ERROR update Domoticz Did:46 value:0
+20170312_11:43:53 - ERROR update Domoticz Did:47 value:0
+20170312_11:43:53 - ERROR update Domoticz Did:63 value:0
+20170312_11:43:53 - ERROR update Domoticz Did:65 value:0
+20170312_11:44:03 - ERROR update Domoticz Did:46 value:0
+20170312_11:44:03 - ERROR update Domoticz Did:47 value:0
+20170312_11:44:03 - ERROR update Domoticz Did:65 value:0
+20170312_11:44:13 - ERROR update Domoticz Did:46 value:0
+20170312_11:44:13 - ERROR update Domoticz Did:47 value:0
+20170312_11:44:13 - ERROR update Domoticz Did:65 value:0
+20170312_11:44:23 - ERROR update Domoticz Did:46 value:0
+20170312_11:44:23 - ERROR update Domoticz Did:47 value:0
+20170312_11:44:23 - ERROR update Domoticz Did:65 value:0
+20170312_11:44:25 - Call clopFileLog: Righe file di LOG: 870, dimensione max: 10000 righe
+20170312_11:44:25 - CRON presence
+20170312_11:44:25 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:25 - tx485 END
+20170312_11:44:26 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:26 - tx485 END
+20170312_11:44:27 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:27 - tx485 END
+20170312_11:44:28 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:28 - tx485 END
+20170312_11:44:29 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:29 - tx485 END
+20170312_11:44:30 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:30 - tx485 END
+20170312_11:44:31 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:31 - tx485 END
+20170312_11:44:32 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_11:44:32 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_11:44:32 - tx485 END
+20170312_11:44:33 - ERROR update Domoticz Did:46 value:0
+20170312_11:44:33 - ERROR update Domoticz Did:47 value:0
+20170312_11:44:33 - ERROR update Domoticz Did:65 value:0
+20170312_11:44:33 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:33 - tx485 END
+20170312_11:44:34 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:34 - tx485 END
+20170312_11:44:35 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:35 - tx485 END
+20170312_11:44:36 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:36 - tx485 END
+20170312_11:44:37 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:37 - tx485 END
+20170312_11:44:39 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:39 - tx485 END
+20170312_11:44:40 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:40 - tx485 END
+20170312_11:44:41 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:41 - tx485 END
+20170312_11:44:42 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:42 - tx485 END
+20170312_11:44:43 - ERROR update Domoticz Did:46 value:0
+20170312_11:44:43 - ERROR update Domoticz Did:47 value:0
+20170312_11:44:43 - ERROR update Domoticz Did:65 value:0
+20170312_11:44:43 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_11:44:43 - tx485 END
+20170312_11:44:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:44:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:44:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:44:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:44:59 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:02 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:03 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:03 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:03 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:03 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:23 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:23 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:23 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:23 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:23 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:33 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:43 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:43 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:43 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:43 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:45:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:03 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:23 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:23 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:23 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:33 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:33 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:33 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:33 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:43 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:46:53 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:47:03 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:47:03 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:47:05 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:47:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:47:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:47:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:47:13 - OS error: read failed: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+20170312_11:47:22 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_11:47:23 - ERROR update Domoticz Did:46 value:0
+20170312_11:47:23 - ERROR update Domoticz Did:47 value:0
+20170312_11:47:23 - ERROR update Domoticz Did:63 value:0
+20170312_11:47:23 - ERROR update Domoticz Did:65 value:0
+20170312_11:47:33 - ERROR update Domoticz Did:46 value:0
+20170312_11:47:33 - ERROR update Domoticz Did:47 value:0
+20170312_11:47:33 - ERROR update Domoticz Did:65 value:0
+20170312_18:26:43 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_18:26:43 - Call clopFileLog: Righe file di LOG: 978, dimensione max: 10000 righe
+20170312_18:26:43 - tx485 END
+20170312_18:26:43 - CRON presence
+20170312_18:26:45 - ERROR update Domoticz Did:46 value:0
+20170312_18:26:45 - ERROR update Domoticz Did:47 value:0
+20170312_18:26:45 - ERROR update Domoticz Did:65 value:0
+20170312_18:26:55 - ERROR update Domoticz Did:46 value:0
+20170312_18:26:55 - ERROR update Domoticz Did:47 value:0
+20170312_18:26:55 - ERROR update Domoticz Did:65 value:0
+20170312_18:26:57 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:26:57 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:26:57 - tx485 END
+20170312_18:27:05 - ERROR update Domoticz Did:46 value:0
+20170312_18:27:05 - ERROR update Domoticz Did:47 value:0
+20170312_18:27:05 - ERROR update Domoticz Did:63 value:0
+20170312_18:27:05 - ERROR update Domoticz Did:65 value:0
+20170312_18:27:15 - ERROR update Domoticz Did:46 value:0
+20170312_18:27:15 - ERROR update Domoticz Did:47 value:0
+20170312_18:27:15 - ERROR update Domoticz Did:65 value:0
+20170312_18:27:25 - ERROR update Domoticz Did:46 value:0
+20170312_18:27:25 - ERROR update Domoticz Did:47 value:0
+20170312_18:27:25 - ERROR update Domoticz Did:65 value:0
+20170312_18:27:35 - ERROR update Domoticz Did:46 value:0
+20170312_18:27:35 - ERROR update Domoticz Did:47 value:0
+20170312_18:27:35 - ERROR update Domoticz Did:65 value:0
+20170312_18:27:45 - ERROR update Domoticz Did:46 value:0
+20170312_18:27:45 - ERROR update Domoticz Did:47 value:0
+20170312_18:27:45 - ERROR update Domoticz Did:65 value:0
+20170312_18:27:55 - ERROR update Domoticz Did:46 value:0
+20170312_18:27:55 - ERROR update Domoticz Did:47 value:0
+20170312_18:27:55 - ERROR update Domoticz Did:65 value:0
+20170312_18:28:03 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:28:03 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:28:03 - tx485 END
+20170312_18:28:05 - ERROR update Domoticz Did:46 value:0
+20170312_18:28:05 - ERROR update Domoticz Did:47 value:0
+20170312_18:28:05 - ERROR update Domoticz Did:65 value:0
+20170312_18:28:15 - ERROR update Domoticz Did:46 value:0
+20170312_18:28:15 - ERROR update Domoticz Did:47 value:0
+20170312_18:28:15 - ERROR update Domoticz Did:63 value:0
+20170312_18:28:15 - ERROR update Domoticz Did:65 value:0
+20170312_18:28:25 - ERROR update Domoticz Did:46 value:0
+20170312_18:28:25 - ERROR update Domoticz Did:47 value:0
+20170312_18:28:25 - ERROR update Domoticz Did:65 value:0
+20170312_18:28:35 - ERROR update Domoticz Did:46 value:0
+20170312_18:28:35 - ERROR update Domoticz Did:47 value:0
+20170312_18:28:35 - ERROR update Domoticz Did:65 value:0
+20170312_18:28:45 - ERROR update Domoticz Did:46 value:0
+20170312_18:28:45 - ERROR update Domoticz Did:47 value:0
+20170312_18:28:45 - ERROR update Domoticz Did:65 value:0
+20170312_18:28:55 - ERROR update Domoticz Did:46 value:0
+20170312_18:28:55 - ERROR update Domoticz Did:47 value:0
+20170312_18:28:55 - ERROR update Domoticz Did:65 value:0
+20170312_18:29:05 - ERROR update Domoticz Did:46 value:0
+20170312_18:29:05 - ERROR update Domoticz Did:47 value:0
+20170312_18:29:05 - ERROR update Domoticz Did:65 value:0
+20170312_18:29:10 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:29:10 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:29:10 - tx485 END
+20170312_18:29:15 - ERROR update Domoticz Did:46 value:0
+20170312_18:29:15 - ERROR update Domoticz Did:47 value:0
+20170312_18:29:15 - ERROR update Domoticz Did:65 value:0
+20170312_18:29:25 - ERROR update Domoticz Did:46 value:0
+20170312_18:29:25 - ERROR update Domoticz Did:47 value:0
+20170312_18:29:25 - ERROR update Domoticz Did:63 value:0
+20170312_18:29:25 - ERROR update Domoticz Did:65 value:0
+20170312_18:29:35 - ERROR update Domoticz Did:46 value:0
+20170312_18:29:35 - ERROR update Domoticz Did:47 value:0
+20170312_18:29:35 - ERROR update Domoticz Did:65 value:0
+20170312_18:29:45 - ERROR update Domoticz Did:46 value:0
+20170312_18:29:45 - ERROR update Domoticz Did:47 value:0
+20170312_18:29:45 - ERROR update Domoticz Did:65 value:0
+20170312_18:29:55 - ERROR update Domoticz Did:46 value:0
+20170312_18:29:55 - ERROR update Domoticz Did:47 value:0
+20170312_18:29:55 - ERROR update Domoticz Did:65 value:0
+20170312_18:30:05 - ERROR update Domoticz Did:46 value:0
+20170312_18:30:05 - ERROR update Domoticz Did:47 value:0
+20170312_18:30:05 - ERROR update Domoticz Did:65 value:0
+20170312_18:30:15 - ERROR update Domoticz Did:46 value:0
+20170312_18:30:15 - ERROR update Domoticz Did:47 value:0
+20170312_18:30:15 - ERROR update Domoticz Did:65 value:0
+20170312_18:30:17 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:30:17 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:30:17 - tx485 END
+20170312_18:30:25 - ERROR update Domoticz Did:46 value:0
+20170312_18:30:25 - ERROR update Domoticz Did:47 value:0
+20170312_18:30:25 - ERROR update Domoticz Did:65 value:0
+20170312_18:30:25 - CRON presence
+20170312_18:30:35 - ERROR update Domoticz Did:46 value:0
+20170312_18:30:35 - ERROR update Domoticz Did:47 value:0
+20170312_18:30:35 - ERROR update Domoticz Did:63 value:0
+20170312_18:30:35 - ERROR update Domoticz Did:65 value:0
+20170312_18:30:45 - ERROR update Domoticz Did:46 value:0
+20170312_18:30:45 - ERROR update Domoticz Did:47 value:0
+20170312_18:30:45 - ERROR update Domoticz Did:65 value:0
+20170312_18:30:55 - ERROR update Domoticz Did:46 value:0
+20170312_18:30:55 - ERROR update Domoticz Did:47 value:0
+20170312_18:30:55 - ERROR update Domoticz Did:65 value:0
+20170312_18:31:05 - ERROR update Domoticz Did:46 value:0
+20170312_18:31:05 - ERROR update Domoticz Did:47 value:0
+20170312_18:31:05 - ERROR update Domoticz Did:65 value:0
+20170312_18:31:15 - ERROR update Domoticz Did:46 value:0
+20170312_18:31:15 - ERROR update Domoticz Did:47 value:0
+20170312_18:31:15 - ERROR update Domoticz Did:65 value:0
+20170312_18:31:24 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:31:24 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:31:24 - tx485 END
+20170312_18:31:25 - ERROR update Domoticz Did:46 value:0
+20170312_18:31:25 - ERROR update Domoticz Did:47 value:0
+20170312_18:31:25 - ERROR update Domoticz Did:65 value:0
+20170312_18:31:35 - ERROR update Domoticz Did:46 value:0
+20170312_18:31:35 - ERROR update Domoticz Did:47 value:0
+20170312_18:31:35 - ERROR update Domoticz Did:65 value:0
+20170312_18:31:45 - ERROR update Domoticz Did:46 value:0
+20170312_18:31:45 - ERROR update Domoticz Did:47 value:0
+20170312_18:31:45 - ERROR update Domoticz Did:63 value:0
+20170312_18:31:45 - ERROR update Domoticz Did:65 value:0
+20170312_18:31:55 - ERROR update Domoticz Did:46 value:0
+20170312_18:31:55 - ERROR update Domoticz Did:47 value:0
+20170312_18:31:55 - ERROR update Domoticz Did:65 value:0
+20170312_18:32:05 - ERROR update Domoticz Did:46 value:0
+20170312_18:32:05 - ERROR update Domoticz Did:47 value:0
+20170312_18:32:05 - ERROR update Domoticz Did:65 value:0
+20170312_18:32:15 - ERROR update Domoticz Did:46 value:0
+20170312_18:32:15 - ERROR update Domoticz Did:47 value:0
+20170312_18:32:15 - ERROR update Domoticz Did:65 value:0
+20170312_18:32:22 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_18:32:32 - Call clopFileLog: Righe file di LOG: 1106, dimensione max: 10000 righe
+20170312_18:32:32 - CRON presence
+20170312_18:32:32 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_18:32:32 - tx485 END
+20170312_18:33:39 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:33:39 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:33:39 - tx485 END
+20170312_18:34:46 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:34:46 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:34:46 - tx485 END
+20170312_18:35:53 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:35:53 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:35:53 - tx485 END
+20170312_18:36:12 - CRON presence
+20170312_18:37:00 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:37:00 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:37:00 - tx485 END
+20170312_18:38:07 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:38:07 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:38:07 - tx485 END
+20170312_18:39:14 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:39:14 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:39:14 - tx485 END
+20170312_18:39:53 - CRON presence
+20170312_18:40:21 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:40:21 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:40:21 - tx485 END
+20170312_18:41:54 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_18:41:58 - Call clopFileLog: Righe file di LOG: 1134, dimensione max: 10000 righe
+20170312_18:41:58 - CRON presence
+20170312_18:41:58 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_18:41:58 - tx485 END
+20170312_18:42:35 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:42:35 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:42:35 - tx485 END
+20170312_18:43:42 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:43:42 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:43:42 - tx485 END
+20170312_18:44:49 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:44:49 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:44:49 - tx485 END
+20170312_18:45:39 - CRON presence
+20170312_18:45:56 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:45:56 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:45:56 - tx485 END
+20170312_18:47:03 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:47:03 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:47:03 - tx485 END
+20170312_18:47:35 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_18:47:37 - Call clopFileLog: Righe file di LOG: 1155, dimensione max: 10000 righe
+20170312_18:47:37 - CRON presence
+20170312_18:47:37 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_18:47:37 - tx485 END
+20170312_18:49:27 - Call clopFileLog: Righe file di LOG: 1159, dimensione max: 10000 righe
+20170312_18:49:27 - CRON presence
+20170312_18:49:27 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_18:49:27 - tx485 END
+20170312_18:53:07 - CRON presence
+20170312_18:56:14 - Call clopFileLog: Righe file di LOG: 1164, dimensione max: 10000 righe
+20170312_18:56:14 - CRON presence
+20170312_18:56:14 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_18:56:14 - tx485 END
+20170312_18:56:27 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:56:27 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:56:27 - tx485 END
+20170312_18:56:29 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:56:29 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:56:29 - tx485 END
+20170312_18:56:43 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_18:56:46 - Call clopFileLog: Righe file di LOG: 1175, dimensione max: 10000 righe
+20170312_18:56:46 - CRON presence
+20170312_18:56:46 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_18:56:46 - tx485 END
+20170312_18:56:58 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:56:58 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:56:58 - tx485 END
+20170312_18:57:00 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:57:00 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:57:00 - tx485 END
+20170312_18:57:12 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_18:57:13 - Call clopFileLog: Righe file di LOG: 1186, dimensione max: 10000 righe
+20170312_18:57:13 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_18:57:13 - tx485 END
+20170312_18:57:13 - CRON presence
+20170312_18:57:19 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:57:19 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:57:19 - tx485 END
+20170312_18:57:21 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:57:21 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:57:21 - tx485 END
+20170312_18:58:26 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:58:26 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:58:26 - tx485 END
+20170312_18:58:55 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_18:58:57 - Call clopFileLog: Righe file di LOG: 1200, dimensione max: 10000 righe
+20170312_18:58:57 - CRON presence
+20170312_18:58:57 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_18:58:58 - tx485 END
+20170312_18:59:33 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_18:59:33 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_18:59:33 - tx485 END
+20170312_19:00:40 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:00:40 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:00:40 - tx485 END
+20170312_19:01:47 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:01:47 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:01:47 - tx485 END
+20170312_19:02:39 - CRON presence
+20170312_19:02:55 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:02:55 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:02:55 - tx485 END
+20170312_19:04:02 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:04:02 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:04:02 - tx485 END
+20170312_19:05:09 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:05:09 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:05:09 - tx485 END
+20170312_19:05:40 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:05:40 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:05:40 - tx485 END
+20170312_19:05:42 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:05:42 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:05:42 - tx485 END
+20170312_19:06:03 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:06:03 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:06:03 - tx485 END
+20170312_19:06:04 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:06:04 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:06:04 - tx485 END
+20170312_19:06:19 - CRON presence
+20170312_19:07:10 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:07:10 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:07:10 - tx485 END
+20170312_19:08:17 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:08:17 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:08:17 - tx485 END
+20170312_19:09:25 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:09:25 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:09:25 - tx485 END
+20170312_19:10:00 - CRON presence
+20170312_19:10:31 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:10:31 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:10:31 - tx485 END
+20170312_19:11:38 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:11:38 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:11:38 - tx485 END
+20170312_19:12:45 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:12:45 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:12:45 - tx485 END
+20170312_19:13:40 - CRON presence
+20170312_19:13:52 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:13:52 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:13:52 - tx485 END
+20170312_19:14:33 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:14:33 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:14:33 - tx485 END
+20170312_19:14:34 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:14:34 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:14:34 - tx485 END
+20170312_19:14:53 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:14:53 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_19:14:53 - tx485 END
+20170312_19:14:53 - tx485: b'*\x02\x04\x01\x00\x00_\r\n'
+20170312_19:14:53 - tx485 END
+20170312_19:14:54 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:14:54 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_19:14:54 - tx485 END
+20170312_19:15:01 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:15:01 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:15:01 - tx485 END
+20170312_19:15:04 - tx485: b'*\x02\x04\x01\x00\x01\x01\r\n'
+20170312_19:15:04 - tx485 END
+20170312_19:15:05 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:15:05 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:15:05 - tx485 END
+20170312_19:15:14 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:15:14 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_19:15:14 - tx485 END
+20170312_19:15:15 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:15:15 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:15:15 - tx485 END
+20170312_19:15:16 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:15:16 - tx485: b'*\r\x04\x01\x00\x82\r\n'
+20170312_19:15:16 - tx485 END
+20170312_19:15:19 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:15:19 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:15:19 - tx485 END
+20170312_19:15:40 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:15:40 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:15:40 - tx485 END
+20170312_19:16:47 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:16:47 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:16:47 - tx485 END
+20170312_19:17:21 - CRON presence
+20170312_19:17:53 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:17:54 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:17:54 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:17:54 - tx485 END
+20170312_19:17:57 - Call clopFileLog: Righe file di LOG: 1304, dimensione max: 10000 righe
+20170312_19:17:57 - CRON presence
+20170312_19:17:57 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_19:17:57 - tx485 END
+20170312_19:18:15 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:18:17 - Call clopFileLog: Righe file di LOG: 1309, dimensione max: 10000 righe
+20170312_19:18:17 - CRON presence
+20170312_19:18:17 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_19:18:17 - tx485 END
+20170312_19:18:54 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:18:55 - Call clopFileLog: Righe file di LOG: 1314, dimensione max: 10000 righe
+20170312_19:18:55 - CRON presence
+20170312_19:18:55 - tx485: b'*\x0b\x04\xbc\r\n'
+20170312_19:18:55 - tx485 END
+20170312_19:19:01 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:19:01 - tx485: b'*\r\x04\x01\x01\xdc\r\n'
+20170312_19:19:01 - tx485 END
+20170312_19:19:52 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:19:54 - Call clopFileLog: Righe file di LOG: 1322, dimensione max: 10000 righe
+20170312_19:19:54 - CRON presence
+20170312_19:20:00 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:20:03 - Call clopFileLog: Righe file di LOG: 1324, dimensione max: 10000 righe
+20170312_19:20:06 - CRON presence
+20170312_19:20:08 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:21:08 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:21:09 - Call clopFileLog: Righe file di LOG: 1329, dimensione max: 10000 righe
+20170312_19:21:09 - CRON presence
+20170312_19:21:15 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:22:06 - Call clopFileLog: Righe file di LOG: 1332, dimensione max: 10000 righe
+20170312_19:22:06 - CRON presence
+20170312_19:22:22 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:23:29 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:23:31 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:23:33 - Call clopFileLog: Righe file di LOG: 1337, dimensione max: 10000 righe
+20170312_19:23:33 - CRON presence
+20170312_19:23:59 - Call clopFileLog: Righe file di LOG: 1339, dimensione max: 10000 righe
+20170312_19:23:59 - CRON presence
+20170312_19:23:59 - Dispositivi presenti: [4]
+20170312_19:24:31 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:24:33 - Call clopFileLog: Righe file di LOG: 1343, dimensione max: 10000 righe
+20170312_19:24:33 - CRON presence
+20170312_19:24:33 - Dispositivi presenti: [4]
+20170312_19:24:36 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:24:54 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:25:02 - Call clopFileLog: Righe file di LOG: 1348, dimensione max: 10000 righe
+20170312_19:25:02 - CRON presence
+20170312_19:25:02 - Dispositivi presenti: [4]
+20170312_19:25:44 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:25:47 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:25:48 - Call clopFileLog: Righe file di LOG: 1353, dimensione max: 10000 righe
+20170312_19:25:48 - CRON presence
+20170312_19:25:48 - Dispositivi presenti: [4]
+20170312_19:26:51 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:27:58 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:29:05 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:29:29 - CRON presence
+20170312_19:30:12 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:31:19 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:32:26 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:33:09 - CRON presence
+20170312_19:33:33 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:34:40 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:35:47 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:36:25 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:36:33 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:36:34 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:36:39 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:36:40 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:36:46 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:36:47 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:36:49 - CRON presence
+20170312_19:36:54 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:37:02 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:37:09 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:37:10 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:37:29 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:37:30 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:37:33 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:37:34 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:37:35 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:37:42 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_19:37:43 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:37:49 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:37:53 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:37:54 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:38:01 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:38:43 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:39:09 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:39:23 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:39:54 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:40:16 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:40:30 - CRON presence
+20170312_19:40:56 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:41:01 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:41:23 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:42:11 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:42:29 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:42:30 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:43:20 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:43:37 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:44:02 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:44:10 - CRON presence
+20170312_19:44:29 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:44:43 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:44:44 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:44:45 - Call clopFileLog: Righe file di LOG: 1409, dimensione max: 10000 righe
+20170312_19:44:45 - CRON presence
+20170312_19:44:45 - Dispositivi presenti: [4]
+20170312_19:45:35 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:45:38 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:45:51 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:46:08 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:46:21 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:46:38 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:46:39 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:46:47 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:46:58 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:47:08 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:47:22 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:47:22 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:47:56 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_19:48:05 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:48:07 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:48:23 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_19:48:24 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:48:25 - CRON presence
+20170312_19:48:41 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:49:05 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:49:12 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:50:14 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:50:15 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:50:19 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:51:23 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:51:26 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:51:47 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:52:06 - CRON presence
+20170312_19:52:32 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:52:34 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:53:20 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:53:40 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:53:42 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:54:48 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:54:51 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:54:54 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:55:46 - CRON presence
+20170312_19:55:55 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:56:00 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:56:27 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_19:58:37 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_19:58:49 - Call clopFileLog: Righe file di LOG: 1453, dimensione max: 10000 righe
+20170312_19:58:49 - CRON presence
+20170312_19:58:50 - Dispositivi presenti: [4]
+20170312_19:59:05 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_19:59:16 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_19:59:27 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_19:59:33 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:00:23 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:00:35 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:00:36 - Call clopFileLog: Righe file di LOG: 1462, dimensione max: 10000 righe
+20170312_20:00:36 - CRON presence
+20170312_20:00:36 - Dispositivi presenti: [4]
+20170312_20:00:43 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:00:43 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:01:06 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:01:30 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:01:45 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:02:44 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:02:56 - Call clopFileLog: Righe file di LOG: 1471, dimensione max: 10000 righe
+20170312_20:02:56 - CRON presence
+20170312_20:02:56 - Dispositivi presenti: [4]
+20170312_20:03:00 - Unexpected error: <class 'TypeError'>
+20170312_20:03:01 - Unexpected error: <class 'TypeError'>
+20170312_20:04:35 - Call clopFileLog: Righe file di LOG: 1476, dimensione max: 10000 righe
+20170312_20:04:35 - CRON presence
+20170312_20:04:35 - Dispositivi presenti: [4]
+20170312_20:04:38 - Unexpected error: <class 'NameError'>
+20170312_20:04:38 - Unexpected error: <class 'NameError'>
+20170312_20:05:07 - Call clopFileLog: Righe file di LOG: 1481, dimensione max: 10000 righe
+20170312_20:05:07 - CRON presence
+20170312_20:05:07 - Dispositivi presenti: [4]
+20170312_20:05:12 - Unexpected error: <class 'TypeError'>
+20170312_20:05:12 - Unexpected error: <class 'TypeError'>
+20170312_20:06:20 - Call clopFileLog: Righe file di LOG: 1486, dimensione max: 10000 righe
+20170312_20:06:20 - CRON presence
+20170312_20:06:20 - Dispositivi presenti: [4]
+20170312_20:06:21 - Unexpected error: <class 'TypeError'>
+20170312_20:06:21 - Unexpected error: <class 'TypeError'>
+20170312_20:06:36 - Call clopFileLog: Righe file di LOG: 1491, dimensione max: 10000 righe
+20170312_20:06:36 - CRON presence
+20170312_20:06:36 - Dispositivi presenti: [4]
+20170312_20:06:40 - Unexpected error: <class 'TypeError'>
+20170312_20:06:40 - Unexpected error: <class 'TypeError'>
+20170312_20:07:07 - Call clopFileLog: Righe file di LOG: 1496, dimensione max: 10000 righe
+20170312_20:07:07 - CRON presence
+20170312_20:07:07 - Dispositivi presenti: [4]
+20170312_20:07:09 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:07:19 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:07:31 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:08:13 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:08:40 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:08:52 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:09:20 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:09:49 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:10:25 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:10:27 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:10:47 - CRON presence
+20170312_20:10:58 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:11:34 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:11:58 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:12:07 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:12:41 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:13:16 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:13:31 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:13:48 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:14:25 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:14:28 - CRON presence
+20170312_20:14:28 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:14:30 - Call clopFileLog: Righe file di LOG: 1521, dimensione max: 10000 righe
+20170312_20:14:30 - CRON presence
+20170312_20:14:30 - Dispositivi presenti: [4]
+20170312_20:14:35 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_20:14:36 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:14:55 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:15:05 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:15:34 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:15:53 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:15:54 - Call clopFileLog: Righe file di LOG: 1530, dimensione max: 10000 righe
+20170312_20:15:54 - CRON presence
+20170312_20:15:55 - Dispositivi presenti: [4]
+20170312_20:15:58 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:16:02 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:16:37 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:16:43 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:17:09 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:17:52 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:18:10 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:18:16 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:19:01 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:19:24 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:19:35 - CRON presence
+20170312_20:19:44 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:20:11 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:20:31 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:20:54 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:23:35 - Call clopFileLog: Righe file di LOG: 1548, dimensione max: 10000 righe
+20170312_20:23:35 - CRON presence
+20170312_20:23:35 - Dispositivi presenti: [4]
+20170312_20:23:37 - Unexpected error: <class 'TypeError'>
+20170312_20:23:37 - Unexpected error: <class 'TypeError'>
+20170312_20:25:07 - Call clopFileLog: Righe file di LOG: 1553, dimensione max: 10000 righe
+20170312_20:25:07 - CRON presence
+20170312_20:25:07 - Dispositivi presenti: [4]
+20170312_20:25:09 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_20:25:10 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:25:21 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:25:22 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:25:23 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:25:56 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:25:56 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:25:57 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:25:57 - Call clopFileLog: Righe file di LOG: 1564, dimensione max: 10000 righe
+20170312_20:25:57 - CRON presence
+20170312_20:25:57 - Dispositivi presenti: [4]
+20170312_20:26:00 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:26:03 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_20:26:04 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:26:05 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_20:26:06 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:26:48 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:26:50 - Call clopFileLog: Righe file di LOG: 1573, dimensione max: 10000 righe
+20170312_20:26:50 - CRON presence
+20170312_20:26:50 - Dispositivi presenti: [4]
+20170312_20:26:52 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:26:53 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:27:05 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_20:27:13 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:27:29 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:27:29 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:27:30 - Call clopFileLog: Righe file di LOG: 1582, dimensione max: 10000 righe
+20170312_20:27:30 - CRON presence
+20170312_20:27:31 - Dispositivi presenti: [4]
+20170312_20:27:33 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:27:33 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_20:28:12 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:28:13 - Call clopFileLog: Righe file di LOG: 1588, dimensione max: 10000 righe
+20170312_20:28:13 - CRON presence
+20170312_20:28:13 - Dispositivi presenti: [4]
+20170312_20:28:15 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_20:28:16 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:28:20 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:28:54 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:28:55 - Call clopFileLog: Righe file di LOG: 1595, dimensione max: 10000 righe
+20170312_20:28:55 - CRON presence
+20170312_20:28:55 - Dispositivi presenti: [4]
+20170312_20:28:57 - Unexpected error: <class 'SyntaxError'>
+20170312_20:28:57 - Unexpected error: <class 'SyntaxError'>
+20170312_20:29:57 - Call clopFileLog: Righe file di LOG: 1600, dimensione max: 10000 righe
+20170312_20:29:57 - CRON presence
+20170312_20:29:57 - Dispositivi presenti: [4]
+20170312_20:30:00 - Unexpected error: <class 'TypeError'>
+20170312_20:30:00 - Unexpected error: <class 'TypeError'>
+20170312_20:30:13 - Call clopFileLog: Righe file di LOG: 1605, dimensione max: 10000 righe
+20170312_20:30:13 - CRON presence
+20170312_20:30:13 - Dispositivi presenti: [4]
+20170312_20:30:16 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:30:32 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:30:35 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:30:36 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:31:41 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_20:31:42 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_20:31:42 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_20:31:44 - Call clopFileLog: Righe file di LOG: 1615, dimensione max: 10000 righe
+20170312_20:31:44 - CRON presence
+20170312_20:31:44 - Dispositivi presenti: [4]
+20170312_20:32:09 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_20:32:43 - Unexpected error: <class 'KeyboardInterrupt'>
