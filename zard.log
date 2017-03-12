@@ -1618,3 +1618,73 @@
 20170312_20:31:44 - Dispositivi presenti: [4]
 20170312_20:32:09 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
 20170312_20:32:43 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_21:27:43 - Call clopFileLog: Righe file di LOG: 1620, dimensione max: 10000 righe
+20170312_21:27:43 - CRON presence
+20170312_21:27:43 - Dispositivi presenti: [4]
+20170312_21:28:02 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_21:28:23 - Call clopFileLog: Righe file di LOG: 1624, dimensione max: 10000 righe
+20170312_21:28:23 - CRON presence
+20170312_21:28:23 - Dispositivi presenti: [4]
+20170312_21:28:42 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_21:29:22 - Call clopFileLog: Righe file di LOG: 1628, dimensione max: 10000 righe
+20170312_21:29:22 - CRON presence
+20170312_21:29:23 - Dispositivi presenti: [4]
+20170312_21:29:28 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_21:30:26 - Call clopFileLog: Righe file di LOG: 1632, dimensione max: 10000 righe
+20170312_21:30:26 - CRON presence
+20170312_21:30:26 - Dispositivi presenti: [4]
+20170312_21:30:33 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_21:30:34 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_21:30:36 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:30:57 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:31:07 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_21:31:34 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_21:32:04 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:32:40 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_21:32:44 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_21:33:12 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:33:52 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_21:34:07 - CRON presence
+20170312_21:34:13 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_21:34:18 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:35:09 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:35:10 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_21:35:11 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_21:35:12 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:35:12 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_21:35:13 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_21:35:14 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_21:35:15 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:35:16 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_21:35:17 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_21:35:18 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_21:35:19 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_21:35:19 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_21:35:20 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:36:18 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:36:27 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_21:36:42 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_21:37:27 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:37:45 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_21:37:48 - CRON presence
+20170312_21:38:11 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_21:39:53 - Call clopFileLog: Righe file di LOG: 1670, dimensione max: 10000 righe
+20170312_21:39:53 - CRON presence
+20170312_21:39:53 - Dispositivi presenti: [4]
+20170312_21:40:06 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_21:40:07 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:40:08 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_21:40:09 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:40:10 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_21:40:21 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_21:40:36 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:40:37 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_21:40:37 - Request Modify IO form DOMOTICZ: [13, 4, 1, 1]
+20170312_21:40:38 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_21:40:39 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
+20170312_21:40:40 - Request Modify IO form DOMOTICZ: [13, 4, 2, 0]
+20170312_21:40:41 - Request Modify IO form DOMOTICZ: [13, 4, 3, 0]
+20170312_21:40:42 - Unexpected error: <class 'KeyboardInterrupt'>
+20170312_21:40:42 - Request Modify IO form DOMOTICZ: [13, 4, 3, 1]
+20170312_21:40:43 - Request Modify IO form DOMOTICZ: [13, 4, 1, 0]
+20170312_21:40:44 - Request Modify IO form DOMOTICZ: [13, 4, 2, 1]
