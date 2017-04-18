@@ -28,6 +28,7 @@ import sys, os
 if sys.version_info[0] == 3:
     import codecs
 import configparser
+import ast # For configparser
 import base64
 import urllib.request as urllib2
 import binascii
@@ -80,7 +81,15 @@ class Config():
     """
     def __init__(self):
         self.config = self.getConfig()
-        # pprint(self.config)
+        self.fileConfig = self.readFile()
+        # print(self.config)
+        # print(self.fileConfig)
+
+    def readFile(self):
+        config = configparser.ConfigParser()
+        config.read('/home/pi/domocontrol/zard.conf')
+        return config
+
 
     def getConfig(self):
         """
@@ -90,24 +99,32 @@ class Config():
         config.read('/home/pi/domocontrol/zard.conf')
         return dict(config._sections)
 
+    def getConfigSection(self, device, io):
+        """
+        Return IO configuration from section
+        example: getConfigSection('DEVICE_4', 'IO1')
+        """
+        a = self.fileConfig
+        a = ast.literal_eval(a.get(device, io))
+        return a
+
     def getDeviceAddress(self):
         """
         Popola il dict self.address id: device da zard.conf
         """
         deviceAddress = {}
         for k in self.config:
-            if k[0:6] == 'DEVICE':
-                deviceAddress.update({int(self.config[k]['board_address']): k})
+            if k[0:len('DEVICE')] == 'DEVICE':
+                deviceAddress.update({int(k[7:]): k})
         return deviceAddress
+
+
 
     def getLogFilename(self):
         return self.config['COMMUNICATION']['log_filename']
 
     def getLogDimension(self):
         return int(self.config['COMMUNICATION']['log_dimension'])
-
-class rs485():
-    pass
 
 
 class Domoticz(Config):
@@ -116,18 +133,18 @@ class Domoticz(Config):
         self.config = self.getConfig()
         self.log = Log(self.getLogFilename(), self.getLogDimension())
         self.deviceAddress = self.getDeviceAddress() # dict with all ZARD address (not remove)
-        self.Z = {}
-        self.setZ() #Dict with IDZ <-> IDA (IDZ=ID domoticz, IDA=ID arduino)
+        self.D = {} # Dict with all data (NEW)
+        self.setD() #Dict with IDZ <-> IDA (IDZ=ID domoticz, IDA=ID arduino)
         self.ser = self.serOpen()
-        self.EEaddressStart = (20) #Start EE address (per evitare problemi con 0X0A)
+        self.EEaddressStart = (0) #Start EE address (per evitare problemi con 0X0A)
         self.EEaddress = 0
         self.EEaddressApp = 0 # EEeprom address appoggio
         self.deviceReady = [] # List con i device in rete
         self.base64string = self.getEncode() # Base64string to connect DOMOTICZ
 
     def __del__(self):
-        self.ser.close()
-        print( "END" )
+        # self.ser.close()
+        print( "**END**" )
 
     def getEncode(self):
         """
@@ -141,55 +158,115 @@ class Domoticz(Config):
         self.boardReady = []
         return baseval
 
-    def setZ(self):
+    def setD(self):
         """
-        Popola il DICT self.Z con 'device_type' e 'Did' per ogni board_address
+        Popola il DICT self.D con tutta la configurazione e gli stati di IO
         """
-        pprint(self.getDeviceAddress())
+        # Definizioni USCITE da 1 a 127:
+        dict_io_type = {
+            'not_used': 0,
+            'toggle': 1,
+            'timer_with_reset': 2,
+            'timer_scale': 3,
+            'timer_scale_with_recount': 4,
+            'blink': 9,
+            'touch': 15,
+            'switch': 14,
+            'power_supply_voltage': 20,
+            'voltage_input': 21,
+            'AM2320_temperature': 30,
+            'AM2320_umidity': 31,
+            'ATMEGA_temperature': 32,
+            'DS1820_temperature': 33,
+        }
+
+        self.D.update({'board_address': []})
         for board_address in self.deviceAddress:
-            self.Z.update({board_address: {}})
+            self.D.update({board_address: {}})
 
-            self.Z[board_address].update({'boars_address': int(board_address)})
+            self.D[board_address].update({'board_address': int(board_address)})
+            self.D['board_address'].append(board_address)
 
-            device_type = eval(self.config[self.deviceAddress[board_address]]['device_type'])
-            l = len(device_type)
+            if not 'status_at_boot' in self.D[board_address]:
+                self.D[board_address].update({'status_at_boot': []})
+            if not 'Drequest' in self.D[board_address]:
+                self.D[board_address].update({'Drequest': []})
+            if not 'Znow' in self.D[board_address]:
+                self.D[board_address].update({'Znow': []})
+            if not 'def_io_type' in self.D[board_address]:
+                self.D[board_address].update({'def_io_type': []})
+            if not 'def_io_type_name' in self.D[board_address]:
+                self.D[board_address].update({'def_io_type_name': []})
+            if not 'io_enable' in self.D[board_address]:
+                self.D[board_address].update({'io_enable': []})
+            if not 'Did' in self.D[board_address]:
+                self.D[board_address].update({'Did': []})
+            if not 'Dname' in self.D[board_address]:
+                self.D[board_address].update({'Dname': []})
+            if not 'io_timer' in self.D[board_address]:
+                self.D[board_address].update({'io_timer': []})
+            if not 'in_board_address' in self.D[board_address]:
+                self.D[board_address].update({'in_board_address': []})
+            if not 'in_address' in self.D[board_address]:
+                self.D[board_address].update({'in_address': []})
+                self.D[board_address].update({'in_address': []})
+            if not 'refresh_timeout' in self.D[board_address]:
+                self.D[board_address].update({'refresh_timeout': []})
 
-            self.Z[board_address].update({'device_type': device_type})
 
-            default = eval(self.config[self.deviceAddress[board_address]]['default'])
-            self.Z[board_address].update({'default': default})
+            for n in range(1,16): # Total number IO devices for each board zard
+                device = "DEVICE_%s" %board_address
+                io = "IO%s" %n
+                try:
+                    io_conf = self.getConfigSection(device, io)
+                    # print(io_conf)
+                    io_enable = 1 if io_conf.get('enable', 'no') == 'yes' else 0
+                    self.D[board_address]['io_enable'].append(io_enable)
 
-            Did = eval(self.config[self.deviceAddress[board_address]].get('domoticz_id', '[]'))
-            self.Z[board_address].update({'Did': Did})
+                    def_io_type = io_conf.get('io_type', 'not_used')
+                    self.D[board_address]['def_io_type'].append(dict_io_type[def_io_type])
+                    self.D[board_address]['def_io_type_name'].append(def_io_type)
 
-            self.Z[board_address].update({ 'Dname': {} })
-            for x in self.config[self.deviceAddress[board_address]]:
-                if x[0:13] == 'domoticz_name':
-                    self.Z[board_address]['Dname'].update({int(x[13:]): self.config[self.deviceAddress[board_address]][x]})
+                    Did =  int(io_conf.get('domoticz_id', 0))
+                    Dname =  io_conf.get('domoticz_name', '')
+                    self.D[board_address]['Did'].append(Did)
+                    self.D[board_address]['Dname'].append(Dname)
+                    self.D[board_address]['status_at_boot'].append(int(io_conf.get('status_at_boot', 0)))
+                    self.D[board_address]['io_timer'].append(int(io_conf.get('timer', 0)))
+                    self.D[board_address]['Drequest'].append(0)
+                    self.D[board_address]['Znow'].append(0)
+                    self.D[board_address]['in_board_address'].append(int(io_conf.get('in_board_address', 0)))
+                    self.D[board_address]['in_address'].append(int(io_conf.get('in_address', 0)))
+                    self.D[board_address]['refresh_timeout'].append(int(io_conf.get('refresh_timeout', 0)))
 
+                except:
+                    self.D[board_address]['io_enable'].append(0)
+                    self.D[board_address]['def_io_type'].append(0)
+                    self.D[board_address]['def_io_type_name'].append('')
+                    self.D[board_address]['Did'].append(0)
+                    self.D[board_address]['io_timer'].append(0)
+                    self.D[board_address]['status_at_boot'].append(0)
+                    self.D[board_address]['Drequest'].append(0)
+                    self.D[board_address]['Znow'].append(0)
+                    self.D[board_address]['in_board_address'].append(0)
+                    self.D[board_address]['in_address'].append(0)
+                    self.D[board_address]['refresh_timeout'].append(0)
 
-            self.Z[board_address].update({'Znow': []}) # Value ZARD
-            self.Z[board_address].update({'Drequest': []}) # Value DOMOTICZ
-
-            for x in range(l):
-                self.Z[board_address]['Znow'].append(0)
-                self.Z[board_address]['Drequest'].append(0)
-
-            # print(self.Z)
+        print(self.D)
 
     def sendURL(self, url):
         """
         Send url to DOMOTICZ to set state of IO
         """
-        # print(url)
-
         try:
             urld = self.url + ':' + self.port + '/json.htm?' + url
             # print("**** %s" %urld)
             request = urllib2.Request(urld)
             request.add_header("Authorization", "Basic %s" % self.base64string.decode('utf-8'))
             result = urllib2.urlopen(request)
+
             resulttext = result.read().decode('utf-8')
+            # print(resulttext)
             dictres = json.loads(resulttext)
             # print(dictres)
             return dictres
@@ -197,6 +274,14 @@ class Domoticz(Config):
             print("NONONONONO")
             return 0
 
+
+    def getUserVariable(self):
+        """
+        Get Domoticz User Variable
+        """
+        url = "type=command&param=getuservariables"
+
+        return url
 
     def updateUserVariable(self, name, type, value):
         """
@@ -216,57 +301,6 @@ class Domoticz(Config):
         url = "type=devices&rid=%s" %Did
         return url
 
-    def sendInputOutput(self, Did, val):
-        """
-        Send switchLight status
-        """
-        value = "On" if val == 1 else "Off"
-        url = "type=command&param=switchlight&idx=%s&switchcmd=%s" %(Did, value)
-        return url
-
-    def sendAlarm(self, Did, val):
-        if val == 1:
-            value = 'CAVI_IN_CORTO'
-        elif val == 2:
-            value = 'ALARM'
-        elif val == 3:
-            value = 'NORMALE'
-        else:
-            value = 'CAVO_SCOLLEGATO'
-
-        # print idx, value
-        # type=command&param=udevice&idx=IDX&nvalue=LEVEL&svalue=TEXT
-        url = "type=command&param=udevice&idx=%s&nvalue=LEVEL&svalue=%s" %(Did, value)
-        # print url
-        return url
-
-    def temperature(self, Did, temp):
-        url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, temp)
-        return url
-
-    def humidity(self, Did, hum, status):
-        url = "type=command&param=udevice&idx=%s&nvalue=%s&svalue=%s" %(Did, hum, status)
-        return url
-
-
-    def AM2320(self, Did, temp, hum, confort=0):
-        url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s;%s;%s" %(Did, temp, hum, confort)
-        return url
-
-    def SHT21(self, Did, temp, hum, confort=0):
-        url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s;%s;%s" %(Did, temp, hum, confort)
-        # print url
-        return url
-
-    def VC(self, Did, VC):
-        url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, VC)
-        return url
-
-    def ANALOG_IN(self, Did, V):
-        url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, V)
-        return url
-
-
     def serOpen(self):
         # print "Serial Open"
         # print self.config['COMMUNICATION']
@@ -276,7 +310,8 @@ class Domoticz(Config):
         stopbits=serial.STOPBITS_ONE,
         bytesize=serial.EIGHTBITS
         # print(RS485_device, RS485_speed)
-        ser = serial.Serial(RS485_device, RS485_speed, timeout=1, xonxoff=False, rtscts=True, dsrdtr=False) #Tried with and without the last 3 parameters, and also at 1Mbps, same happens.
+        ser = serial.Serial(RS485_device, RS485_speed, timeout=0.1, xonxoff=False, rtscts=True, dsrdtr=False) #Tried with and without the last 3 parameters, and also at 1Mbps, same happens.
+        ser.flush()
         ser.flushInput()
         ser.flushOutput()
         return ser
@@ -300,6 +335,7 @@ class Domoticz(Config):
     def tx485(self, serialtx):
         self.ser.write(serialtx)
         # self.log.write("==>tx485 %s" %serialtx)
+        # self.ser.flush()
 
     def serClose(self):
         print( "Serial Close" )
@@ -369,7 +405,6 @@ class Domoticz(Config):
             # print("ACK:", cmd)
             self.tx485(cmd)
 
-
     def sendProva(self):
         cmd = '\x04'
         cmd += '\x03'
@@ -381,7 +416,6 @@ class Domoticz(Config):
         # print rx[0:-3]
         # print(cmd)
         # self.tx485(cmd)
-
 
     def getValDict(self, d, k):
         """
@@ -403,72 +437,105 @@ class Domoticz(Config):
         return d
 
     def setDomoticzIOvariato(self, board_address, io, value):
+        # print("setDomoticzIOvariato",board_address, io, value)
         val = value[0] << 8 | value[1]
-        device_type = self.getValDict(self.Z, [board_address, 'device_type', io-1])
-        if not device_type:
-            l = "ERROR KEY: board_address:%s, device_type:%s, io:%s" %(board_address, 'device_type', io-1)
+
+        def_io_type = self.getValDict(self.D, [board_address, 'def_io_type', io-1]) # arduino ID io
+        # print("def_io_type", def_io_type)
+        if not def_io_type: # Non c'è alcun ID arduino corrispondente
+            l = "ERROR KEY: board_address:%s, def_io_type:%s, io:%s" %(board_address, 'def_io_type', io-1)
             self.log.write(l)
             return
 
-        Did = self.getValDict(self.Z, [board_address,'Did',io-1])
+        Did = self.getValDict(self.D, [board_address,'Did',io-1]) # Domoticz ID
+        # print("Did", Did)
         if not Did:
-            l = "ERROR KEY: board_address:%s, device_type:%s, io:%s" %(board_address, 'Did', io-1)
+            l = "ERROR KEY: board_address:%s, def_io_type:%s, io:%s" %(board_address, 'Did', io-1)
             self.log.write(l)
             return
+
         # print('setDomoticzIOvariato board_address:%s, io:%s, value:%s' %(board_address, io, val))
-        # print('addr:%s, io:%s, device_type:%s, Did:%s, value:%s' %(board_address, io, device_type, Did, val))
+        # print('addr:%s, io:%s, def_io_type:%s, Did:%s, value:%s' %(board_address, io, def_io_type, Did, val))
         res = {}
-        if device_type == 1: #interruttore
-            url = self.sendInputOutput(Did, val)
-        elif device_type == 2: #uscita
-            url = self.sendInputOutput(Did, val)
-        elif device_type == 3 or device_type == 7: #AM2320 / SHT21 Temp
-            url = self.temperature(Did, round( (val)/10.0, 1))
-        elif device_type == 4 or device_type == 8: #AM2320 / SHT21 Hum
-            hum = round( (val)/10.0, 0)
-            #Calc confort humidity: <40:dry; 40-50:normal; 50-60:confort; 60-70:normal; >70:wet
-            stat = 0
-            if hum < 40:
-                stat = 2
-            elif hum >= 40 and hum < 50:
-                stat = 0
-            elif  hum >= 50 and hum < 60:
-                stat = 1
-            elif hum >= 60 and hum < 70:
-                stat = 0
-            elif hum >= 70:
-                stat = 3
+
+        # print("test", def_io_type, Did, type(val))
+        if def_io_type in [1, 2, 3, 4, 9, 14, 15, 'switch', 'touch']: # in / out
+            """
+            Send switchLight status
+            """
+            url = "type=command&param=switchlight&idx=%s&switchcmd=%s" %(Did, {1: 'On', 0: 'Off'}[val])
+            # print("url:", url)
+
+        # elif def_io_type == 3 or def_io_type == 7: #AM2320 / SHT21 Temp
+            # url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, round( (val)/10.0, 1))
+        # elif def_io_type == 4 or def_io_type == 8: #AM2320 / SHT21 Hum
+            # hum = round( (val)/10.0, 0)
+            # #Calc confort humidity: <40:dry; 40-50:normal; 50-60:confort; 60-70:normal; >70:wet
+            # stat = 0
+            # if hum < 40:
+                # stat = 2
+            # elif hum >= 40 and hum < 50:
+                # stat = 0
+            # elif  hum >= 50 and hum < 60:
+                # stat = 1
+            # elif hum >= 60 and hum < 70:
+                # stat = 0
+            # elif hum >= 70:
+                # stat = 3
             # print("HUM",board_address, Did, hum, stat, val)
-            url = self.humidity(Did, hum, stat)
-        elif device_type == 5: #ATMEGA temp
-            url = self.temperature(Did, round( (val)/10.0, 0))
-        elif device_type == 6: #Alarm
+            # url = "type=command&param=udevice&idx=%s&nvalue=%s&svalue=%s" %(Did, hum, stat)
+        # elif def_io_type == 5: #ATMEGA temp
+            # url = "type=command&param=udevice&idx=%s&nvalue=%s&svalue=%s" %(Did, round( (val)/10.0, 0), 0)
+            # url = self.temperature(Did, round( (val)/10.0, 0))
+        # elif def_io_type == 6: #Alarm
             # Get Alarm: 1=Short Circuit; 2=Alarm status; 3=Normal; 4=PIR sconnected
-            Did = self.Z[board_address]['Did'][io-1]
-            Dname = self.Z[board_address]['Dname'][Did]
-            self.updateUserVariable(Dname  ,'Integer', val)
-            url = self.sendAlarm(Did, val)
-        elif device_type == 9: #Ingresso analogico
-            url = self.ANALOG_IN(Did, val)
-        elif device_type == 10: #Tensione alimentazione
-            url = self.VC(Did, val)
-        else:
-            print("device_type non presente: ", board_address, int(io), value, device_type)
+            # Did = self.D[board_address]['Did'][io-1]
+            # Dname = self.D[board_address]['Dname'][Did]
+            # self.updateUserVariable(Dname  ,'Integer', val)
+
+            # if val == 1:
+                # value = 'CAVI_IN_CORTO'
+            # elif val == 2:
+                # value = 'ALARM'
+            # elif val == 3:
+                # value = 'NORMALE'
+            # else:
+                # value = 'CAVO_SCOLLEGATO'
+
+            # print idx, value
+            # type=command&param=udevice&idx=IDX&nvalue=LEVEL&svalue=TEXT
+            # url = "type=command&param=udevice&idx=%s&nvalue=LEVEL&svalue=%s" %(Did, value)
+            # url = self.sendAlarm(Did, val)
+        # elif def_io_type == 9: #Ingresso analogico
+            # url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, val)
+        # elif def_io_type == 10: #Tensione alimentazione
+            # url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, val)
+        # else:
+            # pass
+            # print("def_io_type non presente: ", board_address, int(io), value, def_io_type)
 
 
         try:
-            # print("URL: ", url)
             res = self.sendURL(url)
-            # print(res)
+            # print("URL: ", url, res)
+            # print("RES: ", res)
 
         except:
+            print("self.sendURL(%s) NOT WORKING" %url)
             pass
 
+
         if self.getValDict(res, ['status']) == 'OK':
-            self.Z[board_address]['Znow'][io-1] = val
+            self.D[board_address]['Znow'][io-1] = val
+            try:
+                # print(self.D[board_address]['Dname'][io-1], 'Integer', val)
+                url = self.updateUserVariable(self.D[board_address]['Dname'][io-1], 'Integer', val)
+                self.sendURL(url)
+            except:
+                print("update variable NOT working")
+
         elif self.getValDict(res, ['status']) == 'ERR':
             self.log.write("ERROR update Domoticz Did:%s value:%s" %(Did, val))
-
 
     def setComand(self, cmd):
         """
@@ -481,11 +548,12 @@ class Domoticz(Config):
         #print("comand:%s, addr:%s, io:%s, value:%s" %(comand, addr, io, value))
 
         if comand==1: # IO variato
+            # print("SET IO VARIATO", io, value)
             self.setDomoticzIOvariato(board_address, io, value)
 
         elif comand==14: # Request value IO of ZARD from DOMOTICZ. If equal: pass, otherwise change value of ZARD
-
-            Did = self.getValDict(self.Z, [board_address,'Did',io-1])
+            # return ## LUCA REMOVE
+            Did = self.getValDict(self.D, [board_address,'Did',io-1])
             # print("Did", Did)
             if Did:
                 url = self.getStatusDeviceDomoticz(Did)
@@ -516,7 +584,7 @@ class Domoticz(Config):
             """
             try:
                 # print(cmd)
-                Did = self.Z[board_address]['Did'][io-1]
+                Did = self.D[board_address]['Did'][io-1]
                 vald = self.getStatusDeviceDomoticz(Did)['result'][0]['Status']
                 vald = 1 if vald == 'On' else 0
                 print("Valore Domoticz:%s, Valore ZARD corrente:%s" %(vald, cmd[5]))
@@ -530,9 +598,8 @@ class Domoticz(Config):
                 self.log.write(l)
             """
 
-
     def storeEE(self, cmd, crc):
-        print(cmd)
+        print("=>>",cmd)
         app = []
         self.tx485(cmd)
         time.sleep(0.01) # Importante
@@ -558,7 +625,7 @@ class Domoticz(Config):
                 self.storeEE(cmd, crc)
         else:
             time.sleep(0.5)
-            print("RE StoreEE")
+            # print("RE StoreEE")
             self.storeEE(cmd, crc)
 
     def writeEE(self, board_address, EEcomand):
@@ -566,10 +633,13 @@ class Domoticz(Config):
         Scrive la EEPROM di ZARD
         Board_address, Commento, EEaddress, value
         """
+
         if self.EEaddressApp != board_address:
             self.EEaddressApp = board_address
-            self.EEaddress = self.EEaddressStart
-            # print('*****************', self.EEaddress)
+            self.EEaddress = 0
+
+
+        # print('*****************', self.EEaddress, EEcomand)
 
         l = len(EEcomand)
         # print(board_address, EEcomand, l)
@@ -601,61 +671,68 @@ class Domoticz(Config):
             #print(board_address)
             EEcomand = []
             # print(dir(self.config))
-            for key in self.config[self.deviceAddress[board_address]]:
-                if key[0:22] == 'board_firmware_version': #Default IO at boot
-                    value = eval(self.config[self.deviceAddress[board_address]].get(key, 0))
-                    EEcomand.append(0xF7)
-                    EEcomand.append(value)
 
-                elif key[0:9] == 'io_config': #io_config
-                    value = eval(self.config[self.deviceAddress[board_address]].get(key, 0))
-                    EEcomand.append(0xF6)
-                    EEcomand.extend(value)
 
-                elif key[0:9] == 'io_comand': #Default IO at boot
-                    value = eval(self.config[self.deviceAddress[board_address]].get(key, 0))
+            board_firmware_version =  self.config[self.deviceAddress[board_address]].get("board_firmware_version", 0);
+            EEcomand.append(0xF7)
+            EEcomand.append(int(board_firmware_version))
+
+            # for key in self.config[self.deviceAddress[board_address]]:
+            for key in self.D[board_address]:
+                print("EE: ", board_address, key)
+
+                if key[0:len(key)] == 'in_address':
+                    value = self.D[board_address]['in_address']
                     EEcomand.append(0xF8)
                     EEcomand.extend(value)
+                    print('in_address:', EEcomand)
 
-                elif key[0:12] == 'board_comand': #Default IO at boot
-                    value = eval(self.config[self.deviceAddress[board_address]].get(key, 0))
+                elif key[0:len(key)] == 'in_board_address':
+                    value = self.D[board_address]['in_board_address']
                     EEcomand.append(0xF9)
                     EEcomand.extend(value)
+                    print('in_board_address:', EEcomand)
 
-                elif key[0:11] == 'device_type': #Type of outputs
-                    value = eval(self.config[self.deviceAddress[board_address]].get(key, 0))
+                elif key[0:len(key)] == 'def_io_type':
+                    value = self.D[board_address]['def_io_type']
                     EEcomand.append(0xFA)
                     EEcomand.extend(value)
+                    print('def_io_type:', EEcomand)
 
-                elif key[0:7] == 'timeout': #Timeout on send sensors value
-                    value = eval(self.config[self.deviceAddress[board_address]].get(key, 0))
+                elif key[0:len(key)] == 'refresh_timeout':
+                    value = self.D[board_address]['refresh_timeout']
                     EEcomand.append(0xFB)
                     EEcomand.extend(value)
+                    print('refresh_timeout:', EEcomand)
 
-                elif key[0:7] == 'default': #Default IO at boot
-                    value = eval(self.config[self.deviceAddress[board_address]].get(key, 0))
+                elif key[0:len(key)] == 'status_at_boot':
+                    value = self.D[board_address]['status_at_boot']
                     EEcomand.append(0xFC)
                     EEcomand.extend(value)
+                    print('status_at_boot:', EEcomand)
 
-                elif key[0:7] == 'io_type': #io_type
-                    value = eval(self.config[self.deviceAddress[board_address]].get(key, 0))
+                elif key[0:len(key)] == 'io_type':
+                    value = self.D[board_address]['io_type']
                     EEcomand.append(0xFD)
                     EEcomand.extend(value)
+                    print('io_type:', EEcomand)
 
-                elif key[0:8] == 'io_timer': #io_timer
-                    value = eval(self.config[self.deviceAddress[board_address]].get(key, 0))
+                elif key[0:len(key)] == 'io_timer':
+                    value = self.D[board_address]['io_timer']
                     EEcomand.append(0xFE)
                     EEcomand.extend(value)
+                    print('io_timer:', EEcomand)
 
                 if len(EEcomand) > 0 :
-                    print(EEcomand)
-
                     self.writeEE(board_address, EEcomand)
+
+                # print("***", EEcomand)
                 EEcomand = []
 
-            self.writeEE(board_address, []) # Setta a fine seq. 0
-            self.writeEE(board_address, []) # Setta a fine seq. 0
-            self.writeEE(board_address, []) # Setta a fine seq. 0
+
+            self.writeEE(board_address, [0xF5, 18]) # Setta a fine seq. 0
+            self.writeEE(board_address, [0xF5, 19]) # Setta a fine seq. 0
+            self.writeEE(board_address, [0xF5, 20]) # Setta a fine seq. 0
             self.arduinoReboot(board_address)
 
     def arduinoReboot(self, board_address):
@@ -672,8 +749,8 @@ class Domoticz(Config):
         Cerca se i dispositivi presenti in ZARD.conf sono attivi!!!
         """
         for i in self.deviceAddress:
-            # print("************DEVICE:", i, self.deviceReady)
-            for x in range(100): # Prova varie volte a cercare i dispositivi presenti in ZARD.conf
+            print("DEVICE pronti:", i, self.deviceReady)
+            for x in range(10): # Prova varie volte a cercare i dispositivi presenti in ZARD.conf
                 if i in self.deviceReady: # Salta se device presente
                     break
                 self.txSend([11, i])
@@ -696,13 +773,13 @@ class Domoticz(Config):
         """
         for k in self.config:
             if k[0:6] == "DEVICE":
-                Zdevice_type  = eval(self.config[k]['device_type'])
+                Zdef_io_type  = eval(self.config[k]['def_io_type'])
 
-        l = len(Zdevice_type) #Lenght list
+        l = len(Zdef_io_type) #Lenght list
         #for addr in range(l):
             #print(addr, end=" ")
         #print()
-        print(Zdevice_type)
+        print(Zdef_io_type)
 
         url = "type=devices&used=true&filter=all"
         d = self.sendURL(url)
@@ -748,20 +825,14 @@ class Domoticz(Config):
         self.tx485(val)
 
     def createUserVariables(self):
-        for board_address in self.deviceReady:
-            n = 0
-            for x in self.Z[board_address]['device_type']:
-                if x == 6:
-                    # print(self.Z)
-                    # print(n, self.Z, board_address)
-                    # print()
-                    if n in self.Z[board_address]['Did']:
-                        Did = self.Z[board_address]['Did'][n]
-                        Dname = self.Z[board_address]['Dname'][Did]
-                        # print(board_address, n, x, Did, Dname)
-                        # Store
-                        res = self.addUserVariable(Dname, 'Integer', 0)
-                n += 1
+        """
+        Crea le variabili su domoticz (una per ogni IO di zard). Vedi file configurazione
+        """
+        for board_address in self.D['board_address']:
+            for Dname in self.D[board_address]['Dname']:
+                res = self.addUserVariable(Dname, 'Integer', 0)
+                res = self.sendURL(res)
+                # print(res)
 
 class Presence(Domoticz):
 
@@ -795,12 +866,14 @@ class Presence(Domoticz):
             if currentstate == 0: #IP present
                 state = 1
                 # print("IP:", self.P['ip'][x], " PRESENT", state)
-                url = self.sendInputOutput(self.P['idx'][x], state)
+                # url = self.sendInputOutput(self.P['idx'][x], state)
+                url = "type=command&param=switchlight&idx=%s&switchcmd=%s" %(self.P['idx'][x], state)
 
             elif currentstate == 1: #IP NOT present
                 state = 0
                 # print("IP:", self.P['ip'][x], " NOT PRESENT", state)
-                url = self.sendInputOutput(self.P['idx'][x], state)
+                url = "type=command&param=switchlight&idx=%s&switchcmd=%s" %(self.P['idx'][x], state)
+                # url = self.sendInputOutput(self.P['idx'][x], state)
             else:
                 print("IP:", self.P['ip'][x], " UNDEFINED STATE", currentstate)
             res = self.sendURL(url)
@@ -845,7 +918,6 @@ def cron():
         schedule.run_pending()
         time.sleep(1)
 
-
 def receive():
     print('init loop.py')
     s = Domoticz()
@@ -855,6 +927,7 @@ def receive():
     s.getBoardReady() # Popola la lista con le board attive
     s.createUserVariables() # Create user varialbes how Alarm4-1, Alarm4-2
     # s.sendParameter() # Invia file configurazione ZARD.conf
+    s.createUserVariables() # Crea le variabili su domoticz (una per ogni IO di zard)
     while 1:
         try:
             rxComand = s.rx485()
@@ -865,6 +938,7 @@ def receive():
             # print( "Comand:", s.ser.inWaiting(), s.rxComand, crcPy, s.rxComand[-3:-2] )
             if len(rxComand) > 2 and rxComand[-3:-2][0] == crcPy: # check is CRC is right
                 print(rxComand)
+                # print(s.D[4]['Znow'], s.D[5]['Znow'])
                 try:
                     s.setComand(rxComand)
                 except OSError as err:
@@ -888,8 +962,6 @@ def receive():
         except:
             s.log.write("Unexpected error: %s" %sys.exc_info()[0])
             raise
-
-
 
 def send(argoment):
     """
@@ -926,8 +998,6 @@ def debug(argoment):
         D.tx485(b'x01x02x03x04')
         print(i)
 
-
-
 def serialRead():
     ser = serial.Serial(
         port='/dev/serial0',
@@ -943,7 +1013,6 @@ def serialRead():
          print(x)
 
 
-
 if __name__ == '__main__':
     argoment = sys.argv
     # print(argoment)
@@ -952,6 +1021,15 @@ if __name__ == '__main__':
             debug(argoment)
         elif argoment[1] == 'serial': # Legge i dati dalla seriale
             serialRead()
+        elif argoment[1] == 'Z': # Popola self.D e poi termina
+            d = Domoticz()
+        elif argoment[1] == 'V': # Get variablile from domoticz
+            d = Domoticz()
+            var = d.getUserVariable()
+            print(var)
+            a = d.sendURL(var)
+            print(a)
+            d.createUserVariables()
         else:
             send(argoment)
     else:
