@@ -926,7 +926,7 @@ def receive():
         # s.clearEEPROM(4) #Per cancellare la EEPROM
     s.getBoardReady() # Popola la lista con le board attive
     s.createUserVariables() # Create user varialbes how Alarm4-1, Alarm4-2
-    # s.sendParameter() # Invia file configurazione ZARD.conf
+    s.sendParameter() # Invia file configurazione ZARD.conf
     s.createUserVariables() # Crea le variabili su domoticz (una per ogni IO di zard)
     while 1:
         try:
