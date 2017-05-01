@@ -135,6 +135,7 @@ class Domoticz(Config):
         self.deviceAddress = self.getDeviceAddress() # dict with all ZARD address (not remove)
         self.D = {} # Dict with all data (NEW)
         self.setD() #Dict with IDZ <-> IDA (IDZ=ID domoticz, IDA=ID arduino)
+        print(self.D)
         self.ser = self.serOpen()
         self.EEaddressStart = (0) #Start EE address (per evitare problemi con 0X0A)
         self.EEaddress = 0
@@ -145,6 +146,22 @@ class Domoticz(Config):
     def __del__(self):
         # self.ser.close()
         print( "**END**" )
+
+
+    def calc_time(func):
+        """
+        Restituisce il tempo di esecuzione di una certa funzione
+        """
+        name = func.__name__
+        def inner(self, *args, **kwargs):
+            start = time.time()
+            res = func(self, *args, **kwargs)
+            end = time.time()
+            print("Tempo esecuzione funzione %s: %s seconds " %(name, end-start))
+            return res
+        return inner
+
+
 
     def getEncode(self):
         """
@@ -158,12 +175,13 @@ class Domoticz(Config):
         self.boardReady = []
         return baseval
 
+    @calc_time
     def setD(self):
         """
         Popola il DICT self.D con tutta la configurazione e gli stati di IO
         """
         # Definizioni USCITE da 1 a 127:
-        dict_io_type = {
+        dict_replace = {
             'not_used': 0,
             'toggle': 1,
             'timer_with_reset': 2,
@@ -174,10 +192,18 @@ class Domoticz(Config):
             'switch': 14,
             'power_supply_voltage': 20,
             'voltage_input': 21,
-            'AM2320_temperature': 30,
-            'AM2320_umidity': 31,
-            'ATMEGA_temperature': 32,
-            'DS1820_temperature': 33,
+            'AM2320_T': 30,
+            'AM2320_H': 31,
+            'ATMEGA_T': 32,
+            'DS18x20_T': 33,
+            'SHT21_T': 34,
+            'SHT21_H': 35,
+            'BME280_T': 36,
+            'BME280_H': 37,
+            'BME280_B': 38,
+            'TSL2561_L': 39,
+            'VIN': 40,
+            'ADC': 41,
         }
 
         self.D.update({'board_address': []})
@@ -209,13 +235,60 @@ class Domoticz(Config):
                 self.D[board_address].update({'in_board_address': []})
             if not 'in_address' in self.D[board_address]:
                 self.D[board_address].update({'in_address': []})
-                self.D[board_address].update({'in_address': []})
             if not 'refresh_timeout' in self.D[board_address]:
                 self.D[board_address].update({'refresh_timeout': []})
+            if not 'sensor_enable' in self.D[board_address]:
+                self.D[board_address].update({'sensor_enable': []})
+            if not 'def_sensor_type' in self.D[board_address]:
+                self.D[board_address].update({'def_sensor_type': []})
+            if not 'def_sensor_name' in self.D[board_address]:
+                self.D[board_address].update({'def_sensor_name': []})
+            if not 'sensor_refresh_timeout' in self.D[board_address]:
+                self.D[board_address].update({'sensor_refresh_timeout': []})
+            if not 'sensor_domoticz_id' in self.D[board_address]:
+                self.D[board_address].update({'sensor_domoticz_id': []})
+            if not 'sensor_domoticz_name' in self.D[board_address]:
+                self.D[board_address].update({'sensor_domoticz_name': []})
 
 
-            for n in range(1,16): # Total number IO devices for each board zard
-                device = "DEVICE_%s" %board_address
+
+            device = "DEVICE_%s" % board_address
+
+            # Add sensors list from configutation file
+            for n in range(1,10):
+                sensor = "SENSOR%s" %n
+                try:
+                    sensor_conf = self.getConfigSection(device, sensor)
+                    sensor_enable = 1 if sensor_conf.get('enable', 'no') == 'yes' else 0
+                    self.D[board_address]['sensor_enable'].append(sensor_enable)
+
+                    def_sensor_name = sensor_conf.get('sensor_name', 'not_used')
+                    self.D[board_address]['def_sensor_name'].append(dict_replace[def_sensor_name])
+
+                    def_sensor_type = sensor_conf.get('sensor_type', '')
+                    self.D[board_address]['def_sensor_type'].append(sensor_conf.get('sensor_type', ''))
+
+                    self.D[board_address]['sensor_refresh_timeout'].append(int(sensor_conf.get('refresh_timeout', 0)))
+
+                    sensorDomoticzId =  int(sensor_conf.get('domoticz_id', 0))
+                    sensorDomoticzName =  sensor_conf.get('domoticz_name', '')
+                    self.D[board_address]['sensor_domoticz_id'].append(sensorDomoticzId)
+                    self.D[board_address]['sensor_domoticz_name'].append(sensorDomoticzName)
+
+                    pass
+                except:
+                    pass
+
+            """
+            sensors_conf = self.getConfigSection(device, 'sensors')
+            for key in sensors_conf:
+                self.D[board_address]['sensors'].append(dict_replace.get(key, 0))
+                self.D[board_address]['sensors_timeout'].append(int(sensors_conf[key]))
+
+            """
+
+            # Add list and dict of IOx from configutation file
+            for n in range(1,15): # Total number IO devices for each board zard
                 io = "IO%s" %n
                 try:
                     io_conf = self.getConfigSection(device, io)
@@ -224,7 +297,7 @@ class Domoticz(Config):
                     self.D[board_address]['io_enable'].append(io_enable)
 
                     def_io_type = io_conf.get('io_type', 'not_used')
-                    self.D[board_address]['def_io_type'].append(dict_io_type[def_io_type])
+                    self.D[board_address]['def_io_type'].append(dict_replace[def_io_type])
                     self.D[board_address]['def_io_type_name'].append(def_io_type)
 
                     Did =  int(io_conf.get('domoticz_id', 0))
@@ -239,6 +312,7 @@ class Domoticz(Config):
                     self.D[board_address]['in_address'].append(int(io_conf.get('in_address', 0)))
                     self.D[board_address]['refresh_timeout'].append(int(io_conf.get('refresh_timeout', 0)))
 
+
                 except:
                     self.D[board_address]['io_enable'].append(0)
                     self.D[board_address]['def_io_type'].append(0)
@@ -251,8 +325,6 @@ class Domoticz(Config):
                     self.D[board_address]['in_board_address'].append(0)
                     self.D[board_address]['in_address'].append(0)
                     self.D[board_address]['refresh_timeout'].append(0)
-
-        print(self.D)
 
     def sendURL(self, url):
         """
@@ -436,9 +508,54 @@ class Domoticz(Config):
                     return d[x]
         return d
 
+    def setDomoticzSensorVariato(self, board_address, io, value):
+        val = value[0] << 8 | value[1]
+        Did = self.D[board_address]['sensor_domoticz_id'][io-1]
+        # print("Sensor: ",board_address, io, value, self.D[board_address]['sensor_domoticz_id'][io-1], self.D[board_address]['def_sensor_type'][io-1])
+
+        url=''
+
+        if self.D[board_address]['def_sensor_type'][io-1] == 'Temperature':
+            url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, round( (val)/10.0, 1))
+
+        elif self.D[board_address]['def_sensor_type'][io-1] == 'Humidity':
+            val = value[0] << 8 | value[1]
+            hum = round( (val)/10.0, 0)
+            #Calc confort humidity: <40:dry; 40-50:normal; 50-60:confort; 60-70:normal; >70:wet
+            stat = 0
+            if hum < 40:
+                stat = 2
+            elif hum >= 40 and hum < 50:
+                stat = 0
+            elif  hum >= 50 and hum < 60:
+                stat = 1
+            elif hum >= 60 and hum < 70:
+                stat = 0
+            elif hum >= 70:
+                stat = 3
+            # print("HUM",board_address, Did, hum, stat, val)
+            url = "type=command&param=udevice&idx=%s&nvalue=%s&svalue=%s" %(Did, hum, stat)
+
+        elif self.D[board_address]['def_sensor_type'][io-1] == 'Voltage': #Ingresso ADC / Voltage
+            # print('Voltage Value:', val, val/10)
+            url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, val/10.0)
+
+
+        try:
+            res = self.sendURL(url)
+            # print("URL: ", url, res)
+            # print("RES: ", res)
+
+        except:
+            print("self.sendURL(%s) NOT WORKING" %url)
+            pass
+
+
+    # @calc_time
     def setDomoticzIOvariato(self, board_address, io, value):
         # print("setDomoticzIOvariato",board_address, io, value)
         val = value[0] << 8 | value[1]
+        # print("Valore:", val)
 
         def_io_type = self.getValDict(self.D, [board_address, 'def_io_type', io-1]) # arduino ID io
         # print("def_io_type", def_io_type)
@@ -468,22 +585,7 @@ class Domoticz(Config):
 
         # elif def_io_type == 3 or def_io_type == 7: #AM2320 / SHT21 Temp
             # url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, round( (val)/10.0, 1))
-        # elif def_io_type == 4 or def_io_type == 8: #AM2320 / SHT21 Hum
-            # hum = round( (val)/10.0, 0)
-            # #Calc confort humidity: <40:dry; 40-50:normal; 50-60:confort; 60-70:normal; >70:wet
-            # stat = 0
-            # if hum < 40:
-                # stat = 2
-            # elif hum >= 40 and hum < 50:
-                # stat = 0
-            # elif  hum >= 50 and hum < 60:
-                # stat = 1
-            # elif hum >= 60 and hum < 70:
-                # stat = 0
-            # elif hum >= 70:
-                # stat = 3
-            # print("HUM",board_address, Did, hum, stat, val)
-            # url = "type=command&param=udevice&idx=%s&nvalue=%s&svalue=%s" %(Did, hum, stat)
+
         # elif def_io_type == 5: #ATMEGA temp
             # url = "type=command&param=udevice&idx=%s&nvalue=%s&svalue=%s" %(Did, round( (val)/10.0, 0), 0)
             # url = self.temperature(Did, round( (val)/10.0, 0))
@@ -506,10 +608,7 @@ class Domoticz(Config):
             # type=command&param=udevice&idx=IDX&nvalue=LEVEL&svalue=TEXT
             # url = "type=command&param=udevice&idx=%s&nvalue=LEVEL&svalue=%s" %(Did, value)
             # url = self.sendAlarm(Did, val)
-        # elif def_io_type == 9: #Ingresso analogico
-            # url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, val)
-        # elif def_io_type == 10: #Tensione alimentazione
-            # url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, val)
+
         # else:
             # pass
             # print("def_io_type non presente: ", board_address, int(io), value, def_io_type)
@@ -532,11 +631,12 @@ class Domoticz(Config):
                 url = self.updateUserVariable(self.D[board_address]['Dname'][io-1], 'Integer', val)
                 self.sendURL(url)
             except:
-                print("update variable NOT working")
+                print("update variable NOT working", res)
 
         elif self.getValDict(res, ['status']) == 'ERR':
             self.log.write("ERROR update Domoticz Did:%s value:%s" %(Did, val))
 
+    # @calc_time
     def setComand(self, cmd):
         """
         Si occupa di trasmettere l'input proveniente da arduino a domoticz
@@ -551,13 +651,18 @@ class Domoticz(Config):
             # print("SET IO VARIATO", io, value)
             self.setDomoticzIOvariato(board_address, io, value)
 
+        if comand==8: # sensor variato
+            # print(board_address, io, value)
+            self.setDomoticzSensorVariato(board_address, io, value)
+
         elif comand==14: # Request value IO of ZARD from DOMOTICZ. If equal: pass, otherwise change value of ZARD
-            # return ## LUCA REMOVE
-            Did = self.getValDict(self.D, [board_address,'Did',io-1])
-            # print("Did", Did)
+
+            Did = self.getValDict(self.D, [board_address, 'Did', io-1])
+            print("comand=14: board_address: %s, io: %s, Did: %s" %(board_address, io-1, Did))
+
             if Did:
                 url = self.getStatusDeviceDomoticz(Did)
-                # print("url: ", url)
+                print("Did:", Did, " url: ", url)
 
                 try:
                     res = self.sendURL(url)['result'][0]['Status']
@@ -577,8 +682,7 @@ class Domoticz(Config):
                     # print("Comando inviato a ZARD: %s" %vtx)
                     self.txSend(vtx)
             else:
-                l = "TypeError: 'int' object is not subscriptable\n \
-                    cmd:%s " %(cmd)
+                l = "TypeError: 'int' object is not subscriptable: cmd:%s " %(cmd)
                 self.log.write(l)
 
             """
@@ -666,14 +770,19 @@ class Domoticz(Config):
             self.storeEE(cmd, crc)
             self.EEaddress += 1
 
+
     def sendParameter(self):
+        """
+        Send Paramenter to EEPROM by RS485
+        """
+        ll = []
         for board_address in self.deviceReady: # Fa la scansione di tutte le schede ZARD
-            #print(board_address)
+            # print(board_address)
             EEcomand = []
             # print(dir(self.config))
 
 
-            board_firmware_version =  self.config[self.deviceAddress[board_address]].get("board_firmware_version", 0);
+            board_firmware_version =  self.config[self.deviceAddress[board_address]].get("board_firmware_version", 0)
             EEcomand.append(0xF7)
             EEcomand.append(int(board_firmware_version))
 
@@ -685,54 +794,74 @@ class Domoticz(Config):
                     value = self.D[board_address]['in_address']
                     EEcomand.append(0xF8)
                     EEcomand.extend(value)
-                    print('in_address:', EEcomand)
+                    if not '0xF8' in ll: ll.append('0xF8')
+                    # print('0xF8 in_address:', EEcomand)
 
                 elif key[0:len(key)] == 'in_board_address':
                     value = self.D[board_address]['in_board_address']
                     EEcomand.append(0xF9)
                     EEcomand.extend(value)
-                    print('in_board_address:', EEcomand)
+                    if not '0xF9' in ll: ll.append('0xF9')
+                    # print('0xF9 in_board_address:', EEcomand)
 
                 elif key[0:len(key)] == 'def_io_type':
                     value = self.D[board_address]['def_io_type']
                     EEcomand.append(0xFA)
                     EEcomand.extend(value)
-                    print('def_io_type:', EEcomand)
+                    if not '0xFA' in ll: ll.append('0xFA')
+                    # print('0xFA def_io_type:', EEcomand)
 
                 elif key[0:len(key)] == 'refresh_timeout':
                     value = self.D[board_address]['refresh_timeout']
                     EEcomand.append(0xFB)
                     EEcomand.extend(value)
-                    print('refresh_timeout:', EEcomand)
+                    if not '0xFB' in ll: ll.append('0xFB')
+                    # print('0xFB refresh_timeout:', EEcomand)
 
                 elif key[0:len(key)] == 'status_at_boot':
                     value = self.D[board_address]['status_at_boot']
                     EEcomand.append(0xFC)
                     EEcomand.extend(value)
-                    print('status_at_boot:', EEcomand)
-
-                elif key[0:len(key)] == 'io_type':
-                    value = self.D[board_address]['io_type']
-                    EEcomand.append(0xFD)
-                    EEcomand.extend(value)
-                    print('io_type:', EEcomand)
+                    if not '0xFC' in ll: ll.append('0xFC')
+                    # print('0xFC status_at_boot:', EEcomand)
 
                 elif key[0:len(key)] == 'io_timer':
                     value = self.D[board_address]['io_timer']
                     EEcomand.append(0xFE)
                     EEcomand.extend(value)
-                    print('io_timer:', EEcomand)
+                    if not '0xFE' in ll: ll.append('0xFE')
+                    # print('0xFE io_timer:', EEcomand)
+
+                elif key[0:len(key)] == 'def_sensor_name':
+                    value = self.D[board_address]['def_sensor_name']
+                    EEcomand.append(0xF4)
+                    EEcomand.extend(value)
+                    if not '0xF4' in ll: ll.append('0xF4')
+                    # print('0xFE io_timer:', EEcomand)
+
+                elif key[0:len(key)] == 'sensor_refresh_timeout':
+                    value = self.D[board_address]['sensor_refresh_timeout']
+                    EEcomand.append(0xF3)
+                    EEcomand.extend(value)
+                    if not '0xF3' in ll: ll.append('0xF3')
+                    # print('0xFE io_timer:', EEcomand)
+
+                elif key[0:len(key)] == 'sensor_enable':
+                    value = self.D[board_address]['sensor_enable']
+                    EEcomand.append(0xF2)
+                    EEcomand.extend(value)
+                    if not '0xF2' in ll: ll.append('0xF2')
+                    # print('0xFE io_timer:', EEcomand)
 
                 if len(EEcomand) > 0 :
                     self.writeEE(board_address, EEcomand)
 
-                # print("***", EEcomand)
                 EEcomand = []
-
 
             self.writeEE(board_address, [0xF5, 18]) # Setta a fine seq. 0
             self.writeEE(board_address, [0xF5, 19]) # Setta a fine seq. 0
             self.writeEE(board_address, [0xF5, 20]) # Setta a fine seq. 0
+
             self.arduinoReboot(board_address)
 
     def arduinoReboot(self, board_address):
@@ -917,6 +1046,7 @@ def cron():
     while 1:
         schedule.run_pending()
         time.sleep(1)
+
 
 def receive():
     print('init loop.py')
