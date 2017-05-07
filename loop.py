@@ -188,8 +188,8 @@ class Domoticz(Config):
             'timer_scale': 3,
             'timer_scale_with_recount': 4,
             'blink': 9,
-            'touch': 15,
             'switch': 14,
+            'button': 15,
             'power_supply_voltage': 20,
             'voltage_input': 21,
             'AM2320_T': 30,
@@ -219,6 +219,8 @@ class Domoticz(Config):
                 self.D[board_address].update({'Drequest': []})
             if not 'Znow' in self.D[board_address]:
                 self.D[board_address].update({'Znow': []})
+            if not 'def_io_key' in self.D[board_address]:
+                self.D[board_address].update({'def_io_key': []})
             if not 'def_io_type' in self.D[board_address]:
                 self.D[board_address].update({'def_io_type': []})
             if not 'def_io_type_name' in self.D[board_address]:
@@ -249,6 +251,11 @@ class Domoticz(Config):
                 self.D[board_address].update({'sensor_domoticz_id': []})
             if not 'sensor_domoticz_name' in self.D[board_address]:
                 self.D[board_address].update({'sensor_domoticz_name': []})
+            if not 'def_sensor_key' in self.D[board_address]:
+                self.D[board_address].update({'def_sensor_key': []})
+            if not 'sensor_type' in self.D[board_address]:
+                self.D[board_address].update({'sensor_type': []})
+
 
 
 
@@ -262,11 +269,14 @@ class Domoticz(Config):
                     sensor_enable = 1 if sensor_conf.get('enable', 'no') == 'yes' else 0
                     self.D[board_address]['sensor_enable'].append(sensor_enable)
 
-                    def_sensor_name = sensor_conf.get('sensor_name', 'not_used')
-                    self.D[board_address]['def_sensor_name'].append(dict_replace[def_sensor_name])
+                    self.D[board_address]['def_sensor_key'].append("B%s-%s" %(board_address, sensor))
 
-                    def_sensor_type = sensor_conf.get('sensor_type', '')
-                    self.D[board_address]['def_sensor_type'].append(sensor_conf.get('sensor_type', ''))
+                    def_sensor_name = sensor_conf.get('sensor_name', '')
+                    self.D[board_address]['def_sensor_type'].append(dict_replace[def_sensor_name]) # ok
+
+                    self.D[board_address]['def_sensor_name'].append( def_sensor_name ) # OK.
+
+                    self.D[board_address]['sensor_type'].append( sensor_conf.get('sensor_type', '') )
 
                     self.D[board_address]['sensor_refresh_timeout'].append(int(sensor_conf.get('refresh_timeout', 0)))
 
@@ -297,6 +307,9 @@ class Domoticz(Config):
                     self.D[board_address]['io_enable'].append(io_enable)
 
                     def_io_type = io_conf.get('io_type', 'not_used')
+
+
+                    self.D[board_address]['def_io_key'].append("B%s-%s" %(board_address, io))
                     self.D[board_address]['def_io_type'].append(dict_replace[def_io_type])
                     self.D[board_address]['def_io_type_name'].append(def_io_type)
 
@@ -355,22 +368,30 @@ class Domoticz(Config):
 
         return url
 
-    def updateUserVariable(self, name, type, value):
+    def updateUserVariable(self, name, types, value):
         """
         Update Domoticz User Variable
         """
-        url = "type=command&param=updateuservariable&vname=%s&vtype=%s&vvalue=%s" %(name, type, value)
+        url = "type=command&param=updateuservariable&vname=%s&vtype=%s&vvalue=%s" %(name, types, value)
         return url
 
     def addUserVariable(self, name, type, value):
         """
         Create User Variable to Domoticz
         """
-        url = "type=command&param=saveuservariable&vname=%s&vtype=%s&vvalue=%s" %(name, type, value)
+        url = "type=command&param=saveuservariable&vname=%s&vtype=%s&vvalue=%s" %(name, types, value)
         return url
 
-    def getStatusDeviceDomoticz(self, Did):
-        url = "type=devices&rid=%s" %Did
+    def delUserVariable(self, idx):
+        """
+        Delete Domoticz User Variable
+        """
+        url = "type=command&param=deleteuservariable&idx=%s" %idx
+        return url
+
+
+    def getStatusDeviceDomoticz(self, idx):
+        url = "type=devices&rid=%s" %idx
         return url
 
     def serOpen(self):
@@ -511,34 +532,36 @@ class Domoticz(Config):
     def setDomoticzSensorVariato(self, board_address, io, value):
         val = value[0] << 8 | value[1]
         Did = self.D[board_address]['sensor_domoticz_id'][io-1]
-        # print("Sensor: ",board_address, io, value, self.D[board_address]['sensor_domoticz_id'][io-1], self.D[board_address]['def_sensor_type'][io-1])
+        # print("Sensor: ",self.D[board_address]['sensor_type'][io-1], board_address, io, value, self.D[board_address]['sensor_domoticz_id'][io-1], self.D[board_address]['def_sensor_type'][io-1])
 
         url=''
 
-        if self.D[board_address]['def_sensor_type'][io-1] == 'Temperature':
-            url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, round( (val)/10.0, 1))
+        if self.D[board_address]['sensor_type'][io-1] == 'Temperature':
+            val = round( (val)/10.0, 1)
+            url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, val)
 
-        elif self.D[board_address]['def_sensor_type'][io-1] == 'Humidity':
-            val = value[0] << 8 | value[1]
-            hum = round( (val)/10.0, 0)
+        elif self.D[board_address]['sensor_type'][io-1] == 'Humidity':
+            val = round( (value[0] << 8 | value[1]) / 10.0 , 1)
+            # hum = round( (val)/10.0, 1)
             #Calc confort humidity: <40:dry; 40-50:normal; 50-60:confort; 60-70:normal; >70:wet
             stat = 0
-            if hum < 40:
+            if val < 40:
                 stat = 2
-            elif hum >= 40 and hum < 50:
+            elif val >= 40 and val < 50:
                 stat = 0
-            elif  hum >= 50 and hum < 60:
+            elif  val >= 50 and val < 60:
                 stat = 1
-            elif hum >= 60 and hum < 70:
+            elif val >= 60 and val < 70:
                 stat = 0
-            elif hum >= 70:
+            elif val >= 70:
                 stat = 3
-            # print("HUM",board_address, Did, hum, stat, val)
-            url = "type=command&param=udevice&idx=%s&nvalue=%s&svalue=%s" %(Did, hum, stat)
+            # print("HUMIDITY", board_address, Did, hum, stat)
+            url = "type=command&param=udevice&idx=%s&nvalue=%s&svalue=%s" %(Did, val, stat)
 
-        elif self.D[board_address]['def_sensor_type'][io-1] == 'Voltage': #Ingresso ADC / Voltage
+        elif self.D[board_address]['sensor_type'][io-1] == 'Voltage': #Ingresso ADC / Voltage
             # print('Voltage Value:', val, val/10)
-            url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, val/10.0)
+            val = val/10.0
+            url = "type=command&param=udevice&idx=%s&nvalue=0&svalue=%s" %(Did, val)
 
 
         try:
@@ -549,6 +572,19 @@ class Domoticz(Config):
         except:
             print("self.sendURL(%s) NOT WORKING" %url)
             pass
+
+        if self.getValDict(res, ['status']) == 'OK':
+            self.D[board_address]['Znow'][io-1] = val
+            try:
+                # print(self.D[board_address]['def_sensor_key'][io-1], 1, val)
+                url = self.updateUserVariable(self.D[board_address]['def_sensor_key'][io-1], 1, val)
+                res = self.sendURL(url)
+                # print(url, res)
+            except:
+                print("update variable NOT working", res)
+
+        elif self.getValDict(res, ['status']) == 'ERR':
+            self.log.write("ERROR update Domoticz Did:%s value:%s" %(Did, val))
 
 
     # @calc_time
@@ -576,7 +612,7 @@ class Domoticz(Config):
         res = {}
 
         # print("test", def_io_type, Did, type(val))
-        if def_io_type in [1, 2, 3, 4, 9, 14, 15, 'switch', 'touch']: # in / out
+        if def_io_type in [1, 2, 3, 4, 9, 14, 15, 'switch', 'button']: # in / out
             """
             Send switchLight status
             """
@@ -593,7 +629,7 @@ class Domoticz(Config):
             # Get Alarm: 1=Short Circuit; 2=Alarm status; 3=Normal; 4=PIR sconnected
             # Did = self.D[board_address]['Did'][io-1]
             # Dname = self.D[board_address]['Dname'][Did]
-            # self.updateUserVariable(Dname  ,'Integer', val)
+            # self.updateUserVariable(Dname  ,0, val)
 
             # if val == 1:
                 # value = 'CAVI_IN_CORTO'
@@ -627,8 +663,8 @@ class Domoticz(Config):
         if self.getValDict(res, ['status']) == 'OK':
             self.D[board_address]['Znow'][io-1] = val
             try:
-                # print(self.D[board_address]['Dname'][io-1], 'Integer', val)
-                url = self.updateUserVariable(self.D[board_address]['Dname'][io-1], 'Integer', val)
+                # print(self.D[board_address]['def_io_key'][io-1], '0', val)
+                url = self.updateUserVariable(self.D[board_address]['def_io_key'][io-1], 0, val)
                 self.sendURL(url)
             except:
                 print("update variable NOT working", res)
@@ -658,11 +694,11 @@ class Domoticz(Config):
         elif comand==14: # Request value IO of ZARD from DOMOTICZ. If equal: pass, otherwise change value of ZARD
 
             Did = self.getValDict(self.D, [board_address, 'Did', io-1])
-            print("comand=14: board_address: %s, io: %s, Did: %s" %(board_address, io-1, Did))
+            # print("comand=14: board_address: %s, io: %s, Did: %s" %(board_address, io-1, Did))
 
             if Did:
                 url = self.getStatusDeviceDomoticz(Did)
-                print("Did:", Did, " url: ", url)
+                # print("Did:", Did, " url: ", url)
 
                 try:
                     res = self.sendURL(url)['result'][0]['Status']
@@ -832,12 +868,12 @@ class Domoticz(Config):
                     if not '0xFE' in ll: ll.append('0xFE')
                     # print('0xFE io_timer:', EEcomand)
 
-                elif key[0:len(key)] == 'def_sensor_name':
-                    value = self.D[board_address]['def_sensor_name']
+                elif key[0:len(key)] == 'def_sensor_type':
+                    value = self.D[board_address]['def_sensor_type']
                     EEcomand.append(0xF4)
                     EEcomand.extend(value)
                     if not '0xF4' in ll: ll.append('0xF4')
-                    # print('0xFE io_timer:', EEcomand)
+                    print('0xF4 def_sensor_type:', EEcomand)
 
                 elif key[0:len(key)] == 'sensor_refresh_timeout':
                     value = self.D[board_address]['sensor_refresh_timeout']
@@ -953,15 +989,50 @@ class Domoticz(Config):
         # self.log.write("tx485: %s" %val)
         self.tx485(val)
 
+    def DelCreateUpdateVariable(self, so, name='', types='', value='', idx=0 ):
+        if so == 'create':
+            res = self.addUserVariable(name, types, value)
+            print(res)
+        elif so == 'delete':
+            res = self.delUserVariable(idx)
+
+        res = self.sendURL(res)
+        print('DelCreateUpdateVariable', res)
+
     def createUserVariables(self):
         """
         Crea le variabili su domoticz (una per ogni IO di zard). Vedi file configurazione
         """
+        varD = self.getUserVariable()
+        varD = self.sendURL(varD)
+        listVar = []
+        listDname = []
+        for r in varD['result']:
+            listDname.append(r['Name'])
+
         for board_address in self.D['board_address']:
-            for Dname in self.D[board_address]['Dname']:
-                res = self.addUserVariable(Dname, 'Integer', 0)
-                res = self.sendURL(res)
-                # print(res)
+            for varName in self.D[board_address]['def_io_key']:
+                listVar.append(varName)
+                if varName in listDname: # Var esistente
+                    pass
+                else: # Create
+                    self.DelCreateUpdateVariable('create', varName, 0, 0)
+            for varName in self.D[board_address]['def_sensor_key']:
+                listVar.append(varName)
+                if varName in listDname: # Var esistente
+                    pass
+                else: # Create
+                    self.DelCreateUpdateVariable('create', varName, 1, 0)
+
+        DvarToDelete = list(set(listDname)-set(listVar))
+
+        # print("\n\n", varD['result'])
+        for v in varD['result']:
+            # print(v)
+            if v['Name'] in DvarToDelete:
+                # print("cancellare", v['idx'])
+                self.DelCreateUpdateVariable('delete', '', '', v['idx'])
+
 
 class Presence(Domoticz):
 
